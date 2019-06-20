@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "包工侠个人信息",
+  "usingComponents": {
+    "wux-upload": "../component/upload/index",
+    "wux-wing-blank": "../component/wing-blank/index",
+    "wux-white-space": "../component/white-space/index",
+    "wux-icon": "../component/icon/index",
+    "wux-button": "../component/button/index"
+  }
+}

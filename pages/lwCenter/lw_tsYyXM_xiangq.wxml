@@ -1,0 +1,2 @@
+<import src="../xmXQ/xmXQ.wxml"/>
+<template is="item_xq" data='{{xm_name,xm_money,xm_renshu,idcard,zhizhao,zhengxin,xm_fabuTime,xm_addr,xm_startTime,xm_endTime,xm_gcclass,xm_gzclass,xm_yezhuName,xm_chengbaoName,xm_beianhao,xm_info,xm_fujian}}'></template>

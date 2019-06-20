@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "用户注册",
+  "usingComponents": {
+    "wux-button": "../component/button/index",
+    "wux-toast": "../component/toast/index",
+    "wux-wing-blank": "../component/wing-blank/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

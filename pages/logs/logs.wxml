@@ -1,0 +1,2 @@
+<!--logs.wxml-->
+<input type='text' placeholder='请输入手机号'></input>

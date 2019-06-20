@@ -1,0 +1,11 @@
+@import '../bgxCenter/bgxPersonalInfo.wxss';
+.weui-textarea {
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.weui-textarea-counter {
+  position: relative;
+  top: -10rpx;
+  color: #666;
+}

@@ -1,0 +1,57 @@
+<!--搜索  -->
+<wux-search-bar value="{{ searchText}}" auto="{{ false }}" placeholder="项目名称" bind:change="searchTextonChange" bind:clear="searchTextonClear" />
+
+<!-- 筛选栏 -->
+<import src='../teml/shaixuan_teml.wxml' />
+<view id="swiper-tab">
+  <!-- tab展示 -->
+  <template is='swiper-tab' data='{{tabList,currentTab}}'> </template>
+  <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'>
+    <!--单项选择-->
+    <template is='tab_item' data='{{tab_item,_res}}'></template>
+    <!--左右结构区域-->
+    <template is='citys1' data='{{selected_index1,selected_index2,cityleft,citycenter}}'></template>
+    <!--单项选择-->
+    <swiper-item>
+      <view class="location_bottom">
+        <view wx:for='{{tab_item1}}' class="{{_res1 == index?'add_House':'add_city'}}" data-index="{{index}}" bindtap="clickHouse1" data-name="{{item}}">{{item}}</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="shaixuankuang">
+        <template is="shaixuan_item" data='{{shaixuan,shaixuan_}}'></template>
+        <view class="qingkong">
+          <span class="tianjian" bindtap="qingchu">清除条件</span>
+          <p class="queren" bindtap="queren">确认</p>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+
+<!--项目列表-->
+<block wx:for="{{xmlist}}">
+  <wux-wing-blank size="small">
+    <view class='xmlist' data-pid='{{item.p_id}}' bindtap='click_item'>
+      <view class='xmName'>{{item.p_name}}
+        <text class='gcClass_'>({{item.technical_type}})</text>
+        <text class="{{item.authentica?'yirenzheng':'weirenzheng'}}">{{item.authentica?'已认证':'未认证'}}</text>
+      </view>
+      <view class='xmTime'>发布：{{item.add_time}}</view>
+      <view class='money_addr'>
+        <view class='xmMoney'>
+          <text wx:if='{{item.p_column_price}}'>金额：{{item.p_column_price}}万</text>
+          <text wx:else>金额：面议</text>
+        </view>
+        <view class='xmAddr'>区域：{{item.region}}</view>
+      </view>
+      <view class='xmInfo'>描述：{{item.p_remark}}</view>
+    </view>
+  </wux-wing-blank>
+</block>
+<wux-white-space />
+<wux-white-space />
+<view class='isbottom'>--我是有底线的--</view>
+<wux-white-space />
+<wux-white-space />

@@ -1,0 +1,4 @@
+<!--pages/wode/wode_shoucang.wxml-->
+<import src='../discover/discover.wxml'></import>
+<template is='gyq' data='{{dataList,zhankai_index,pinglunData,pinglun_index,pinglun_content,isbottom}}'></template>
+<!-- <view class='noneSoucang' wx:hidden='{{dataList.length>0}}'>暂无收藏</view> -->

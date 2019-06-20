@@ -1,0 +1,2 @@
+/* pages/wode/wode_discover.wxss */
+@import '../discover/discover.wxss';

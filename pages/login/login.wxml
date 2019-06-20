@@ -1,0 +1,111 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <wux-tabs theme="assertive" auto="{{ false }}" current="{{ current }}" bindchange="onChange">
+      <wux-tab key="密码登录" title="密码登录"></wux-tab>
+      <wux-tab key="验证码登录" title="验证码登录"></wux-tab>
+    </wux-tabs>
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" wx:if="{{current == '密码登录'}}">
+        <!--tab页一-->
+        <view class='page'>
+          <view class="page__bd">
+            <wux-wing-blank size="large">
+              <view class='juese'>
+                <wux-select id="wux-select1" />
+                <wux-cell-group>
+                  <wux-cell title="角色" extra="{{ title1 }}" bind:click="onClick1"></wux-cell>
+                </wux-cell-group>
+              </view>
+            </wux-wing-blank>
+            <wux-white-space />
+            <wux-white-space />
+            <div class="weui-cells">
+              <div class="weui-cell">
+                <div class="weui-cell__bd">
+                  <input type='number' class="weui-input" value='{{tel}}' maxlength='11' placeholder="手机号" bindinput='tel' />
+                </div>
+              </div>
+            </div>
+            <wux-white-space />
+            <div class="weui-cells">
+              <div class="weui-cell">
+                <div class="weui-cell__bd">
+                  <input type='password' class="weui-input" value='{{pwd}}' placeholder="密码" bindinput='pwd' />
+                </div>
+              </div>
+            </div>
+
+          </view>
+          <view class="page__fd">
+            <view class="weui-btn-area">
+              <view class="weui-cells__title">没有密码？
+                <navigator url="/pages/regist/regist" hover-class="navigator-hover" class='mr10'>请注册</navigator>忘记密码？
+                <navigator url="/pages/pwdreset/pwdreset" hover-class="navigator-hover">请重置</navigator>
+              </view>
+              <wux-wing-blank size="default">
+                <wux-button block type="assertive" bindtap="pwdlogin">登录</wux-button>
+              </wux-wing-blank>
+            </view>
+          </view>
+        </view>
+
+      </view>
+      <view class="weui-tab__content" wx:if="{{current == '验证码登录'}}">
+        <!--tab页一-->
+        <view class='page'>
+          <view class="page__bd">
+            <wux-wing-blank size="large">
+              <view class='juese'>
+                <wux-select id="wux-select1" />
+                <wux-cell-group>
+                  <wux-cell title="角色" extra="{{ title1 }}" bind:click="onClick1"></wux-cell>
+                </wux-cell-group>
+              </view>
+            </wux-wing-blank>
+            <wux-white-space />
+            <wux-white-space />
+            <div class="weui-cells">
+              <div class="weui-cell">
+                <div class="weui-cell__bd">
+                  <input type='number' class="weui-input" value='{{tel}}' maxlength='11' placeholder="手机号" bindinput='tel' />
+                </div>
+              </div>
+            </div>
+
+            <div class="weui-cells">
+              <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__bd">
+                  <input class="weui-input" type="number" placeholder="手机验证码" bindblur="yanzhengma" />
+                </div>
+                <div class="weui-cell__ft">
+                  <wux-wing-blank body-style="margin-right: 20px">
+                    <wux-button outline="true" hoverStopPropagation='{{true}}' block type="assertive" disabled='{{yzmDisabled}}' bindtap='getCode'>{{yzmTime}}</wux-button>
+                  </wux-wing-blank>
+                </div>
+              </div>
+            </div>
+
+          </view>
+          <view class="page__fd">
+            <view class="weui-btn-area">
+              <view class="weui-cells__title">没有密码？
+                <navigator url="/pages/regist/regist" hover-class="navigator-hover" class='mr10'>请注册</navigator>忘记密码？
+                <navigator url="/pages/pwdreset/pwdreset" hover-class="navigator-hover">请重置</navigator>
+              </view>
+              <wux-wing-blank size="default">
+                <wux-button block type="assertive" bindtap="yzmlogin">登录</wux-button>
+              </wux-wing-blank>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">包工侠-国内首家施工业劳务征信运营平台</navigator>
+    </view>
+    <view class="weui-footer__text">京ICP备16032010号</view>
+  </view>
+</view>

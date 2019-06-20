@@ -1,0 +1,23 @@
+/* pages/regist/regist.wxss */
+
+page {
+  padding-top: 100rpx;
+}
+
+.weui-agree__checkbox-icon {
+  top: 1rpx;
+}
+
+.weui-cell__ft {
+  padding-right: 20rpx;
+}
+
+.weui-input {
+  border: 0.5rpx solid #dcdcdc;
+  background-color: #fff;
+  padding-left: 20rpx;
+}
+
+.weui-footer__link {
+  color: #888;
+}

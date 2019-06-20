@@ -1,0 +1,11 @@
+@import '../fbfCenter/tsYyLW_xiangq.wxss';
+.weui-uploader__bd{
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  background-color: #fff;
+}
+.weui-cells__title{
+  background-color: #fff;
+  margin-bottom: 0;
+  margin-top: 30rpx;
+}

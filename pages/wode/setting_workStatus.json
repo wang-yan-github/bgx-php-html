@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "设置工作状态",
+  "usingComponents": {
+    "wux-radio-group": "../component/radio-group/index",
+    "wux-radio": "../component/radio/index",
+    "wux-button": "../component/button/index",
+    "wux-wing-blank": "../component/wing-blank/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

@@ -1,0 +1,124 @@
+@import '../teml/shaixuan_teml.wxss';
+.swiper-tab-list{
+ width: 33.3%;
+}
+swiper-item{
+  overflow: auto;
+}
+
+.item{
+  height: 160rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 30rpx; 
+  position: relative;
+  overflow: hidden;
+}
+.item_t{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  /* color: #666; */
+  position: relative;
+}
+.item_t image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 0;
+  top: -10rpx;
+}
+.item_c,.item_b{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #666;
+  position: relative;
+}
+.item_b_l{
+  font-size: 28rpx;
+  color: #666;
+  float: left;
+}
+.item_b_r{
+  float: right;
+  font-size: 30rpx;
+  color: green;
+}
+
+.item_oprator{
+  position: absolute;
+  height: 177rpx;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  overflow: auto;
+}
+
+.item_oprator_item{
+  position: relative;
+  top: 15rpx;
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 140rpx;
+  text-align: center;
+  line-height: 140rpx;
+  float: right;
+  color: #fff;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+}
+.item_oprator_item:nth-child(1){
+  background-color: red;
+}
+.item_oprator_item:nth-child(2){
+  background-color: orange;
+}
+.item_oprator_item:nth-child(3){
+  background-color: green;
+}
+.item_oprator_item:nth-child(4){
+  background-color: blue;
+}
+.item_oprator_item:nth-child(5){
+  background-color: #ccc;
+}
+.notdata{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+
+.item_oprator_item {
+  top: 30rpx;
+}
+
+.yirenzheng{
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 0;
+  top: 15rpx;
+  color: #52c41a;
+  background-color: #f6ffed;
+  border: 1rpx solid #b7eb8f;
+}
+.weirenzheng{
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  color: #fa8c16;
+  background-color: #fff7e6;
+  border:1rpx solid #ffd591;
+}
+.new{
+  color: red;
+}

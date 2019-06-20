@@ -1,0 +1,84 @@
+/* pages/wode/wode.wxss */
+
+.header {
+  /* margin-top: 2rpx; */
+  height: 200rpx;
+  width: 100%;
+  background-color: #ec4141;
+  overflow: hidden;
+  border-top: 2rpx solid #ccc;
+  margin-bottom: 40rpx;
+}
+
+.fl {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+
+.fl image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 40rpx;
+  margin-top: 25rpx;
+  border-radius: 150rpx;
+  border: 2rpx solid #fff;
+}
+
+.fr {
+  float: left;
+  height: 100%;
+  width: 70%;
+}
+
+.fr_t {
+  height: 100rpx;
+  /* background-color: #fff; */
+}
+
+.fr_b {
+  height: 100rpx;
+  position: relative;
+}
+
+.name {
+  position: relative;
+  top: 40rpx;
+  font-size: 34rpx;
+  color: #fff;
+}
+
+.tel {
+  position: relative;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.margin_t_40 {
+  margin-top: 40rpx;
+}
+
+.reset {
+  font-size: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  padding: 2rpx 20rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  border: 2rpx solid #fff;
+}
+
+.icon_ {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -2rpx;
+}
+
+.newXiaoxi {
+  color: #ec414c;
+  font-size: 28rpx;
+}

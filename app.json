@@ -1,0 +1,109 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/UserAgreement/UserAgreement",
+    "pages/fbfCenter/tsYyLW_evaluate",
+    "pages/fbfCenter/tsYyLW_viewLogs",
+    "pages/fbfCenter/tsYyLW",
+    "pages/fbfCenter/tsYyLW_hetongQueren",
+    "pages/fbfCenter/tsYyLW_xiangq",
+    "pages/fbfCenter/fabuXM",
+    "pages/fbfCenter/tsYyXM",
+    "pages/fbfCenter/tsYyXM_modify",
+    "pages/fbfCenter/tsYyXM_xiangq",
+    "pages/fbfCenter/fabaofangPersonalInfo",
+    "pages/fbfCenter/fbf_upHetong",
+    "pages/fbfCenter/fbf_editHetong",
+    "pages/clsCenter/clsPersonalInfo",
+    "pages/wode/qiehuanRole",
+    "pages/lwCenter/lwPersonalInfo",
+    "pages/lwCenter/lw_tsYyXM",
+    "pages/lwCenter/lw_tsYyXM_xiangq",
+    "pages/lwCenter/lw_tsYyXM_addLogs",
+    "pages/bgxCenter/bgxPersonalInfo",
+    "pages/bgxCenter/bgx_tsYyXM",
+    "pages/bgxCenter/bgx_tsYyXM_addLogs",
+    "pages/bgxCenter/bgx_tsYyXM_xiangq",
+    "pages/bgxCenter/bgx_tsYyLW",
+    "pages/bgxCenter/bgx_tsYyLW_xiangq",
+    "pages/bgxCenter/bgx_tsYyLW_tuiLW",
+    "pages/bgxCenter/bgx_upHetong",
+    "pages/bgxCenter/bgx_editHetong",
+    "pages/bgxCenter/bgx_tsYyLW_viewLogs",
+    "pages/bgxCenter/bgx_evaluate",
+    "pages/bgxCenter/lwbanzu",
+    "pages/login/login",
+    "pages/regist/regist",
+    "pages/teml/shaixuan_teml",
+    "pages/teml/citys_teml",
+    "pages/findlw/findlw",
+    "pages/xmXQ/xmXQ",
+    "pages/xmXQ/lookFile",
+    "pages/findXm/findXm",
+    "pages/lwXQ/lwXQ",
+    "pages/pwdreset/pwdreset",
+    "pages/logs/logs",
+    "pages/xiaoxi/xiaoxi",
+    "pages/xiaoxi/SystemXiaoxi",
+    "pages/xiaoxi/liaotianXiaoxi",
+    "pages/xiaoxi/pageXiaoxi",
+    "pages/wode/wode",
+    "pages/wode/wode_discover",
+    "pages/wode/setting",
+    "pages/wode/setting_banben",
+    "pages/wode/wode_shoucang",
+    "pages/wode/helpCenter",
+    "pages/wode/yijianfankui",
+    "pages/wode/certification",
+    "pages/wode/editPhone",
+    "pages/wode/setting_workStatus",
+    "pages/discover/discover",
+    "pages/discover/discover_fabu",
+    "pages/dabaitiao/index",
+    "pages/pincailiao/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ec4141",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#ffffff",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#000"
+  },
+  "tabBar": {
+    "selectedColor": "#ec4141",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "/pages/images/index.png",
+        "selectedIconPath": "/pages/images/index_select.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发 现",
+        "iconPath": "/pages/images/faxian.png",
+        "selectedIconPath": "/pages/images/faxian_select.png"
+      },
+      {
+        "pagePath": "pages/xiaoxi/xiaoxi",
+        "text": "消 息",
+        "iconPath": "/pages/images/xiaoxi.png",
+        "selectedIconPath": "/pages/images/xiaoxi_select.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我 的",
+        "iconPath": "/pages/images/wode.png",
+        "selectedIconPath": "/pages/images/wode_select.png"
+      }
+    ]
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  }
+}

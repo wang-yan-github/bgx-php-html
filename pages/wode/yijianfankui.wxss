@@ -1,0 +1,8 @@
+/* pages/wode/yijianfankui.wxss */
+.fankui{
+  height: 400rpx;
+  width: 94%;
+  background-color: #fff;
+  border: 1rpx solid #ccc;
+  padding: 20rpx;
+}

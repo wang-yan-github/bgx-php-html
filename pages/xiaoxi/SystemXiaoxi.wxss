@@ -1,0 +1,10 @@
+/* pages/xiaoxi/SystemXiaoxi.wxss */
+
+.title {
+  padding: 30rpx 60rpx;
+  color: #666;
+}
+
+.wux-media__title {
+  text-align: center;
+}

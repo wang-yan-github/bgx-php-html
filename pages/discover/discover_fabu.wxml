@@ -1,0 +1,33 @@
+<!--pages/discover/discover_fabu.wxml-->
+<view class="weui-cells__title">
+  #话题#
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      选择发布{{array[index]}}
+    </view>
+  </picker>
+</view>
+<wux-white-space />
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength='200' placeholder="分享你的新鲜事吧！" value='{{info}}' bindinput='info'></textarea>
+      <text class='yeji_Info_zishu'>{{zishu}}/200</text>
+    </view>
+  </view>
+</view>
+<wux-white-space />
+<view class='address' catchtap='getUserLocation'>
+  <image class='addr' src='/pages/images/addr.png'></image>
+  {{address}}
+</view>
+<wux-white-space />
+
+<!-- 上传图片 -->
+  <wux-upload count='9' list-type="picture-card" file-list="{{ fileList }}" url="{{fileUrl}}" formData='{{formData}}' bind:change="onChange" bind:success="onSuccess" bind:fail="onFail"  bind:complete="onComplete" bind:preview="onPreview" bind:remove='onRemove'>
+    <text style='font-size:30rpx;color:#666;'>上传图片</text>
+  </wux-upload>
+
+<wux-wing-blank>
+  <wux-button block outline type="assertive" bind:click='submit'>发布</wux-button>
+</wux-wing-blank>

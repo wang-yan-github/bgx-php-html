@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">查看下载文件</view>
+    <view class="page__title">注意：当前是临时目录,保存请长按图片进行保存</view>
+  </view>
+  <view class="page__bd">
+    <wux-grids>
+      <block wx:for='{{fileList}}'>
+        <wux-grid thumb="{{item.filePath}}" id="{{item.filePath}}" label="{{item.time}}" bind:click='previewImage' />
+      </block>
+    </wux-grids>
+  </view>
+</view>

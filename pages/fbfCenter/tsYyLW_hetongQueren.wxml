@@ -1,0 +1,26 @@
+<!--pages/fbfCenter/tsYyLW_hetongQueren.wxml-->
+<view class='title'>劳务名称：</view>
+<view class='content'>{{name}}</view>
+<view class='title'>上传时间：</view>
+<view class='content'>{{time}}</view>
+<view class='title'>项目合同：</view>
+<view class='hetong'>
+  <view class="weui-grids">
+    <block wx:for="{{images}}" wx:key="*this">
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" id="{{item.img}}" catchtap='previewImage' src="{{item.img}}" />
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<view class='fankui' wx:if='{{isfankui}}'>
+  <textarea placeholder="请输入反馈信息" bindinput='fankui' auto-focus />
+  <button type='default' catchtap='fankuiSubmit'>反馈信息</button>
+</view>
+<view class='mydiv' catchtap='hideFankui' wx:if='{{isfankui}}'></view>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <button class='btn_warn_' catchtap='hetong_error'>合同有误</button>
+  <button class='btn_primary_' catchtap='hetong_ok'>合同正确</button>
+</view>

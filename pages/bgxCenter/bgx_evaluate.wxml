@@ -1,0 +1,16 @@
+
+<wux-cell title="满意度：" hover-class="none">
+  <wux-rater slot="footer" default-value="{{ slider }}" margin="{{ 15 }}" icon="ios-heart" />
+</wux-cell>
+
+<view class="weui-cells__title">评价：</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" bindinput='text' placeholder="请输入评价内容" style="height: 6em" />
+      <view class="weui-textarea-counter">{{zishu}}/200</view>
+    </view>
+  </view>
+</view>
+
+<button class="weui-btn" type="primary" bindtap='submit'>提交</button>

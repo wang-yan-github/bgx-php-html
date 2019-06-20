@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "推劳务",
+  "usingComponents": {
+    "wux-button": "../component/button/index",
+    "wux-wing-blank": "../component/wing-blank/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

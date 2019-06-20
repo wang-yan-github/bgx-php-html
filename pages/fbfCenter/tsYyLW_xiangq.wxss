@@ -1,0 +1,93 @@
+/* pages/fbfCenter/tsYyLW_xiangq.wxss */
+.lw_h {
+  height: 300rpx;
+  overflow: hidden;
+  background-color: #ec414c;
+  border-top: 2rpx solid #ccc;
+}
+
+.lw_h_l {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.lw_h_l image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 10rpx;
+  margin-top: 50rpx;
+  border-radius: 150rpx;
+  border: 2rpx solid #ccc;
+}
+
+.lw_h_r {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+.lw_h_r_t, .lw_h_r_b {
+  height: 50rpx;
+  width: 100%;
+}
+
+.lw_h_r_c {
+  height: 200rpx;
+  padding-left: 30rpx;
+}
+
+.lw_h_r_c image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.age_sex {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+  position: relative;
+  top: -30rpx;
+}
+
+.age_sex text {
+  margin-right: 15rpx;
+}
+
+.addr {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+  position: relative;
+  top: -20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #fff;
+  line-height: 36rpx;
+}
+
+.content {
+  padding: 20rpx;
+  color: #666;
+  font-size: 30rpx;
+  background-color: #fff;
+  line-height: 60rpx;
+}
+
+.xm_content {
+  margin-top: 30rpx;
+  padding: 20rpx;
+  color: #666;
+  font-size: 30rpx;
+  background-color: #fff;
+  line-height: 60rpx;
+}
+
+.xmInfo {
+  display: block;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+  color: orangered;
+}

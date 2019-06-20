@@ -1,0 +1,11 @@
+/* pages/lwCenter/lw_tsYyXM.wxss */
+@import '../bgxCenter/bgx_tsYyXM.wxss';
+
+.item_t {
+  font-size: 32rpx;
+}
+
+.new {
+  color: red;
+}
+

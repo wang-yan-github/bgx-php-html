@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "设置",
+  "usingComponents": {
+    "wux-cell-group": "../component/cell-group/index",
+    "wux-cell": "../component/cell/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

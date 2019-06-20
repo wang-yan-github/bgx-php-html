@@ -1,0 +1,90 @@
+/* pages/wode/certification.wxss */
+
+.alert_ {
+  margin-left: 20rpx;
+}
+
+.title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+.title_discrible {
+  color: #666;
+  font-size: 26rpx;
+  margin-left: 30rpx;
+}
+
+.touxiang {
+  height: 260rpx;
+  text-align: center;
+  background-color: #fff;
+  font-size: 26rpx;
+  color: #666;
+  overflow: hidden;
+  border-radius: 10rpx;
+  border: 1rpx solid #ccc;
+}
+
+.touxiang image {
+  height: 150rpx;
+  width: 150rpx;
+  border: 1rpx solid #666;
+  border-radius: 150rpx;
+  display: block;
+  margin: 20rpx auto;
+  padding: 5rpx;
+}
+
+.swap {
+  height: 360rpx;
+  width: 200%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding: 30rpx;
+  position: relative;
+  border: 1rpx solid #ccc;
+}
+
+.card {
+  width: 600rpx;
+  margin-right: 50rpx;
+  height: 320rpx;
+  background-color: #eee;
+  float: left;
+  border: 1rpx solid #ccc;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+}
+
+.card image {
+  height: 150rpx;
+  width: 150rpx;
+  display: block;
+  margin: 30rpx auto;
+}
+
+.point {
+  position: absolute;
+  height: 40rpx;
+  width: 120rpx;
+  bottom: 10rpx;
+  left: 22%;
+}
+
+.point_l, .point_r {
+  height: 20rpx;
+  width: 20rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid red;
+  float: left;
+  margin: 5rpx 13rpx;
+}
+
+.active {
+  background-color: red;
+}

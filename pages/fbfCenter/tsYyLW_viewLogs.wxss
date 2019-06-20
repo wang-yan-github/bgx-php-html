@@ -1,0 +1,85 @@
+/* pages/fbfCenter/tsYyLW_viewLogs.wxss */
+
+page {
+  /* background-color: #eee; */
+}
+
+.calendar {
+  background-color: #eeedff;
+  padding-top: 10px;
+}
+
+.header {
+  font-size: large; /*修改了标题文字和按钮的大小*/
+  color: #605eac; /*修改了标题文字和按钮的颜色*/
+}
+
+.board {
+  background-color: #dddcff;
+  color: white;
+}
+
+.red, .green, .gray {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  margin: 0 10rpx;
+  position: relative;
+  top: 5rpx;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.tip {
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 10rpx;
+  color: gray;
+}
+
+.tip2 {
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 60rpx;
+  border-top: 2rpx solid #fff;
+  background-color: #dddcff;
+}
+
+.title {
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  background-color: #eee;
+}
+
+.content {
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+}
+
+.content_ {
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.weui-footer{
+  padding: 0 20rpx;
+}

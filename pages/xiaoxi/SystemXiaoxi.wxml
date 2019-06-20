@@ -1,0 +1,5 @@
+<!--pages/xiaoxi/SystemXiaoxi.wxml-->
+<!-- <view class="title">系统消息</view> -->
+<block wx:for='{{list}}'>
+  <wux-media title="{{item.title}}{{item.x_status == 0?'(最新)':''}}" label="{{item.content}}"></wux-media>
+</block>

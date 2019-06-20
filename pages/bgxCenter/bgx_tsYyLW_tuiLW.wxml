@@ -1,0 +1,21 @@
+<view class="weui-cells__title">添加所需工种（限定三个）</view>
+<view class="weui-cells__title">
+  <text wx:if='{{gongzhong.length>0}}'>已选：</text>
+  <text class='canWorkAddr' data-index='{{index}}' wx:for='{{gongzhong}}' wx:key='*this' catchtap='gongzhong_close'>{{item}}<text class='canWorkAddr_close' hidden='{{gongzhong.length==0}}'>x</text></text>
+</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__bd">
+      <picker bindchange="bindPickerChange1" value="{{gzClass_index}}" range="{{gzClass}}">
+        <view class="picker">
+          {{gzClass[gzClass_index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+</view>
+<wux-white-space />
+<wux-white-space />
+<wux-wing-blank>
+  <wux-button block type="assertive" bind:click='submit'>提交</wux-button>
+</wux-wing-blank>

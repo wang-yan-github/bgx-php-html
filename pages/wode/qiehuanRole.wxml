@@ -1,0 +1,55 @@
+<!--pages/wode/qiehuanRole.wxml-->
+<view class='swap'>
+  <view class='item' wx:if='{{isfbf}}' data-text='发包方' bindtap='click_'>
+    <view class='fl'>
+      <image src='/pages/images/fabu_icon.png'></image>
+    </view>
+    <view class='fr'>
+      <view class='fr_t'>
+        <text class='title'>发包方</text>
+      </view>
+      <view class='fr_b'>
+        <text class='describle'>发布项目、找包工头</text>
+      </view>
+    </view>
+  </view>
+  <view class='item' wx:if='{{isbgx}}' data-text='包工侠' bindtap='click_'>
+    <view class='fl'>
+      <image src='/pages/images/bgx_icon.png'></image>
+    </view>
+    <view class='fr'>
+      <view class='fr_t'>
+        <text class='title'>包工侠</text>
+      </view>
+      <view class='fr_b'>
+        <text class='describle'>找项目、找劳务、拼材料</text>
+      </view>
+    </view>
+  </view>
+  <view class='item' wx:if='{{islw}}' data-text='劳务' bindtap='click_'>
+    <view class='fl'>
+      <image src='/pages/images/worker1_icon.png'></image>
+    </view>
+    <view class='fr'>
+      <view class='fr_t'>
+        <text class='title'>劳务</text>
+      </view>
+      <view class='fr_b'>
+        <text class='describle'>找工作、找项目、拼材料</text>
+      </view>
+    </view>
+  </view>
+  <view class='item' wx:if='{{iscls}}' data-text='材料商' bindtap='click_'>
+    <view class='fl'>
+      <image src='/pages/images/cailiao_icon.png'></image>
+    </view>
+    <view class='fr'>
+      <view class='fr_t'>
+        <text class='title'>材料商</text>
+      </view>
+      <view class='fr_b'>
+        <text class='describle'>订单报价</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/fbfCenter/tsYyXM_xiangq.wxml-->
+
+<import src="../xmXQ/xmXQ.wxml"/>
+<template is="item_xq" data='{{...xmInfo}}'></template>
+

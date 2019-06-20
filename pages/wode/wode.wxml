@@ -1,0 +1,100 @@
+<!--pages/wode/wode.wxml-->
+<view class='header'>
+  <view class='fl'>
+    <image src='{{touxiang}}'></image>
+  </view>
+  <view class='fr'>
+    <view class='fr_t'>
+      <text class='name'>{{name}}({{role?role:'游客'}})</text>
+    </view>
+    <view class='fr_b'>
+      <text class='tel'>{{tel}}</text>
+      <a class='reset' catchtap='reset'>注销</a>
+    </view>
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title">
+  <navigator url="qiehuanRole" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/qiehuan_icon.png" class='icon_'></image>
+    </view>
+    <view class="weui-cell__bd">切换角色</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" catchtap='infoTap'>
+    <view class="weui-cell__hd">
+      <image src="/pages/images/info_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">基本信息</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>
+
+
+
+
+<view class="weui-cells weui-cells_after-title margin_t_40">
+  <navigator url="" wx:if='{{banzuShow}}' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/duoren_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">班组管理</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+
+  <view wx:if='{{fabuShow}}' catchtap='fabuTap' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/fabu1_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">发布项目</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+
+  <view wx:if='{{clsShow}}' catchtap='tsyyXmTap' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/item_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">项目管理</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">
+      <text class='newXiaoxi' hidden='{{x_total==0}}'>最新 {{x_total}} 条</text>
+    </view>
+  </view>
+
+  <view wx:if='{{clsShow && tsYyLwShow}}' catchtap='tsYyLwTap' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/worker_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">劳务管理</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">
+      <text class='newXiaoxi' hidden='{{l_total==0}}'>最新 {{l_total}} 条</text>
+    </view>
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title margin_t_40">
+  <navigator url="wode_discover" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/tiezi_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">我的帖子</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+  <navigator url="wode_shoucang" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/shoucang_icon.png" class='icon_'>></image>
+    </view>
+    <view class="weui-cell__bd">我的收藏</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+</view>
+
+<view class="weui-cells weui-cells_after-title margin_t_40">
+  <view catchtap='setting' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/pages/images/shezhi_icon.png" class='icon_'></image>
+    </view>
+    <view class="weui-cell__bd">设置</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

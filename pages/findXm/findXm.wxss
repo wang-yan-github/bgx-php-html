@@ -1,0 +1,100 @@
+/* pages/lizi/lizi.wxss */
+@import '../teml/shaixuan_teml.wxss';
+page{
+  background-color:#f8f8f9;
+}
+.xmName{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #444;
+  padding: 0 20rpx;
+  position: relative;
+}
+.xmName .gcClass_{
+  color: orangered;
+}
+.xmTime{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #444;
+  padding: 0 20rpx;
+}
+.money_addr{
+  overflow: hidden;
+  padding: 0 20rpx;
+  border-bottom: 1rpx dotted #ccc;
+}
+.xmMoney,.xmAddr{
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  font-size: 26rpx;
+  color: #444;
+}
+.xmMoney{
+  width: 30%;
+}
+.xmAddr{
+  width: 70%;
+}
+.xmInfo{
+  max-height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  color: #666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.xmlist{
+  padding: 20rpx 0;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.quyu .qy{
+  width: 49%;
+}
+.yirenzheng{
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  color: #52c41a;
+  background-color: #f6ffed;
+  border: 1rpx solid #b7eb8f;
+}
+.weirenzheng{
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  color: #fa8c16;
+  background-color: #fff7e6;
+  border:1rpx solid #ffd591;
+}
+.weui-search-bar{
+  height: 100rpx;
+  display: block;
+}
+.isbottom {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: #ec414c;
+}

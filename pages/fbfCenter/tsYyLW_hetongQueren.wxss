@@ -1,0 +1,78 @@
+/* pages/fbfCenter/tsYyLW_hetongQueren.wxss */
+page{
+  background-color: #eee;
+}
+.title{
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  background-color: #eee;
+}
+.content{
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+}
+.weui-grid__icon {
+  width: 210rpx;
+  height: 210rpx;
+}
+.weui-grids{
+  background-color: #fff;
+}
+.weui-grid{
+  border: none;
+}
+.btn_warn_{
+  background-color: red;
+  color: #fff;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  font-size: 32rpx;
+}
+.btn_primary_{
+  margin-left: 100rpx;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: green;
+  color: #fff;
+  display: inline-block;
+  font-size: 32rpx;
+}
+.fankui{
+  z-index: 2;
+  position: fixed;
+  bottom: 300rpx;
+  left: 50%;
+  margin-left: -320rpx;
+}
+.fankui textarea{
+  background-color: #fff;
+  padding: 20rpx;
+  margin: 0 auto;
+  z-index: 2;
+}
+.fankui button{
+  margin-top: 30rpx;
+  width: 640rpx;
+  z-index: 2;
+  background-color: #ccc;
+  color: black;
+}
+.mydiv{
+  width: 5000rpx;
+  height: 5000rpx;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0,0,0,.7);
+}

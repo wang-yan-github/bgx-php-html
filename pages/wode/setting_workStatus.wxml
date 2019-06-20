@@ -1,0 +1,14 @@
+<!--pages/wode/setting_workStatus.wxml-->
+<wux-radio-group name="a" value="{{ value1 }}" title="设置工作状态" bind:change="onChange1">
+  <wux-radio color="balanced" title="空闲" value="0" />
+  <wux-radio color="balanced" title="忙碌" value="1" />
+  <wux-radio color="balanced" title="忙碌可以接活" value="2" />
+  <wux-radio color="balanced" title="暂不接活" value="3" />
+</wux-radio-group>
+<wux-white-space />
+<wux-white-space />
+<wux-white-space />
+<wux-white-space />
+<wux-wing-blank>
+  <wux-button block type="assertive" bindtap='formSubmit'>提交</wux-button>
+</wux-wing-blank>

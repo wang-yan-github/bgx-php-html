@@ -1,0 +1,8 @@
+<!--pages/fbfCenter/tsYyXM_modify.wxml-->
+<import src="fabuXM.wxml" />
+<template is="fabuXM" data="{{xm_yusuan,xm_beianhao,xm_number,xm_yezhuName,xm_chengbaoName,xmName,xm_startTime,xm_endTime,zishu,zishu1,gongzhong,gcClass,gcClass_index,gzClass,gzClass_index,province,city,county,condition,provinces,citys,countys,fileList,formData,fileUrl,xm_info,xm_addr}}"></template>
+<wux-wing-blank>
+  <button class="weui-btn" type="warn" bindtap='fabu'>提交</button>
+</wux-wing-blank>
+<wux-white-space />
+<wux-white-space />

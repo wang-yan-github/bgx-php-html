@@ -1,0 +1,69 @@
+<!--pages/regist/regist.wxml-->
+<div class="page">
+  <div class="page__bd">
+    <div class="weui-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder="手机号" bindinput='tel' />
+        </div>
+      </div>
+    </div>
+    <div class="weui-cells">
+      <div class="weui-cell weui-cell_vcode">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder="手机验证码" bindblur="yanzhengma" />
+        </div>
+        <div class="weui-cell__ft">
+          <wux-wing-blank size="small">
+            <wux-button outline="true" block type="assertive" disabled='{{yzmDisabled}}' bindtap='getCode'>{{yzmTime}}</wux-button>
+          </wux-wing-blank>
+        </div>
+      </div>
+    </div>
+
+    <div class="weui-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="password" placeholder="密码长度最少6位" bindblur="pwd" />
+        </div>
+      </div>
+    </div>
+
+    <div class="weui-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="text" placeholder="真实姓名" bindblur="name" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page__ft">
+    <wux-white-space />
+    <wux-white-space />
+    <wux-white-space />
+    <wux-white-space />
+    <checkbox-group bindchange="bindAgreeChange">
+      <label class="weui-agree" for="weuiAgree">
+        <view class="weui-agree__text">
+          <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+          <view class="weui-agree__checkbox-icon">
+            <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+          </view>
+          阅读并同意
+          <navigator url="/pages/UserAgreement/UserAgreement" class="weui-agree__link">《相关条款》</navigator>
+        </view>
+      </label>
+    </checkbox-group>
+    <wux-white-space />
+    <wux-white-space />
+    <wux-wing-blank size="default">
+      <wux-button block type="assertive" id="showTooltips" bindtap="regist">确定</wux-button>
+    </wux-wing-blank>
+  </div>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">包工侠-国内首家施工业劳务征信运营平台</navigator>
+    </view>
+    <view class="weui-footer__text">京ICP备16032010号</view>
+  </view>
+</div>

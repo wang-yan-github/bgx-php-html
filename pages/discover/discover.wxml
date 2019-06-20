@@ -1,0 +1,109 @@
+<!--pages/discover/discover.wxml-->
+<!-- 头部banner -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 导航栏 -->
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='0'>
+      <image src="/pages/images/zgzh.png"></image>招工找活</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='1'>
+      <image src="/pages/images/gfzq.png"></image>官方专区</view>
+  </view>
+</view>
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='2'>
+      <image src="/pages/images/essc.png"></image>二手市场</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='more'>
+      <image src="/pages/images/more.png"></image>更多</view>
+  </view>
+</view>
+
+<view class='more' hidden='{{isMore}}' bindtap='isHide'></view>
+<view class='more1' hidden='{{isMore}}'>
+  <view class="weui-cells">
+    <view class="weui-cell" catchtap='search_tiezi' wx:for='{{more1}}' data-index='{{index}}'>
+      <view class="weui-cell__bd huati">
+        <view class='huati_l'>
+          <image src='{{item.image}}'></image>
+        </view>
+        <view class='huati_r'>
+          <view>{{item.name}}</view>
+          <view class="describe">{{item.describe}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<template name='gyq'>
+  <!-- 信息展示 -->
+  <block wx:for='{{dataList}}' wx:for-item="item">
+    <view class='info_item'>
+      <view class='info_item_l'>
+        <image src='{{item.cf_headPortrait?item.cf_headPortrait:"/pages/images/touxiang.png"}}'></image>
+      </view>
+      <view class='info_item_r'>
+        <view class='name'>{{item.cf_name}}</view>
+        <view class='content_text'>
+          <view class="content {{zhankai_index == item.cf_id?'zhankai':''}}">
+            <text class='class_' wx:if='{{item.cf_topic}}'>[{{item.cf_topic}}]</text>{{item.cf_content}}
+            <text wx:if='{{item.cf_content.length>55}}'>
+            <text wx:if='{{item.cf_content.length>21}}' class="{{zhankai_index == item.cf_id?'elliptical1':'elliptical'}}">...</text></text>
+          </view>
+          <view wx:if='{{item.cf_content.length>55}}' class='zhankan' data-cfid='{{item.cf_id}}' catchtap='zhankai'>{{zhankai_index == item.cf_id?'收起':'全文'}}</view>
+        </view>
+        <!-- 图片 -->
+        <view class="weui-grids discover_imgs" wx:if='{{item.imgs.length>0}}'>
+          <block wx:for="{{item.imgs}}" wx:for-item="item_">
+            <view class="weui-grid" hover-class="weui-grid_active">
+              <image class="weui-grid__icon images_" data-imags='{{item.imgs}}' id='{{item_.img}}' catchtap='previewImage' src="{{item_.img}}" />
+            </view>
+          </block>
+        </view>
+        <view class='time' wx:if='{{item.cf_region.length>0}}'>{{item.cf_region}}</view>
+        <view class='time'> {{item.cf_Time_Past}}</view>
+        <view class='oprator'>
+          <view class='oprator_item' data-cfid='{{item.cf_id}}' catchtap='pinglun_'>
+            <image src="/pages/images/pinglun.png"></image>{{item.cf_replyNum?item.cf_replyNum:'评论'}}</view>
+          <view class='oprator_item' data-cfid='{{item.cf_id}}' catchtap='shoucang'>
+            <image src="{{item.isCollection?'/pages/images/evaicon_select.png':'/pages/images/evaicon.png'}}"></image>收藏</view>
+          <view class='oprator_item' data-cfid='{{item.cf_id}}'>
+            <image src='/pages/images/fenxiang.png' class='fenxiang'></image>
+            <button data-cfid='{{item.cf_id}}' open-type=" share ">分享</button>
+          </view>
+          <view class='oprator_item' data-cfid='{{item.cf_id}}' catchtap='dianzan'>
+            <image src="/pages/images/dianzan.png "></image>{{item.cf_followNum?item.cf_followNum:'点赞'}}</view>
+        </view>
+        <!-- 评论展示 -->
+        <view class='pinglun' wx:for='{{pinglunData}}' wx:for-item="idx" data-cfid='item.cf_id' hidden='{{item.cf_id !== pinglun_index}}'>
+          <text class='name'>{{idx.c_name}}：</text>
+          <text class='content'>{{idx.c_content}}</text>
+        </view>
+        <view class='shuru' hidden='{{item.cf_id !== pinglun_index}}'>
+          <input type='text' bindinput='pinglun_content' class='input' value='{{pinglun_content}}' placeholder='我要评论. . .'></input>
+          <button class='btn' data-index='{{index}}' data-cfid='{{item.cf_id}}' catchtap='pinglunSubmit'>提交</button>
+        </view>
+
+      </view>
+      <view class='close' hidden='{{del}}'>
+        <image src='/pages/images/delete.png' data-cfid='{{item.cf_id}}' catchtap='discover_del'></image>
+      </view>
+    </view>
+  </block>
+  <view class='isbottom' wx:if='{{isbottom}}'>--我是有底线的--</view>
+</template>
+<template is='gyq' data='{{dataList,zhankai_index,pinglunData,pinglun_index,pinglun_content,isbottom,del}}'></template>
+<view class='fabu' style='right:{{ballRight}}px;bottom:{{ballBottom}}px' catchtouchmove='move' bindtap='fabu'>发帖</view>

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container-fluid" hidden='{{dateIsShow}}'>
+  <calendar weeks-type="cn" cell-size="50" next="{{true}}" prev="{{true}}" show-more-days="{{true}}" calendar-style="calendar" header-style="header" board-style="board" lunar='{{true}}' days-color="{{days_style}}" bindnextMonth="next" bindprevMonth="prev"
+    binddateChange="dateChange" binddayClick="dayClick" />
+  <view class='tip'>
+    <view class='red'></view>未读
+    <view class='green'></view>已读
+    <view class='gray'></view>未提交
+  </view>
+  <view class='tip2'>注：点击日期查看日志</view>
+</view>
+<view hidden='{{!dateIsShow}}'>
+  <view class='title'>劳务名称：</view>
+  <view class='content'>{{name}}</view>
+  <view class='title'>提交时间：</view>
+  <view class='content'>{{time}}</view>
+  <view class='title'>日志内容：</view>
+  <view class='content_'> {{content}}</view>
+</view>
+<view class='weui-footer weui-footer_fixed-bottom' hidden='{{!dateIsShow}}'>
+  <button class="weui-btn" type="default" catchtap='showCalendar'>显示日历</button>
+</view>

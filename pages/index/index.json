@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-floating-button": "../component/floating-button/index",
+    "wux-notice-bar": "../component/notice-bar/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

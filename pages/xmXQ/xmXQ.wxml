@@ -1,0 +1,111 @@
+<!--pages/xmXQ/xmXQ.wxml-->
+<template name="item_xq">
+  <view class='xmName'>
+    <view class='xm_name'>{{xm_name}}</view>
+  </view>
+  <view class='money_renshu'>
+    <view class='xmMoney'>
+      <view class='xmMoney_top'>工程金额</view>
+      <view class='xmMoney_bottom'>
+        <text wx:if='{{xm_money}}'>￥{{xm_money}}万</text>
+        <text wx:else>面议</text>
+      </view>
+    </view>
+    <view class='xmRenshu '>
+      <view class='xmRenshu_top '>所需人数</view>
+      <view class='xmRenshu_bottom '>
+        <text wx:if='{{xm_renshu}}'>{{xm_renshu}}人</text>
+        <text wx:else>面议</text>
+      </view>
+    </view>
+  </view>
+  <!--信用信息-->
+  <view class='xingyong '>
+    <view class='xingyong_l ' bindtap='idcard '>
+      <view class='img '>
+        <image src="/pages/images/shenfenzheng.png"></image>
+      </view>
+      <view class='text '>
+        身份证
+      </view>
+    </view>
+    <view class='xingyong_c ' bindtap='zhizhao '>
+      <view class='img '>
+        <image src="/pages/images/zhizhao.png"></image>
+      </view>
+      <view class='text '>
+        营业执照
+      </view>
+    </view>
+    <view class='xingyong_r ' data-xyf='{{zhengxin}} ' bindtap='zhengxin '>
+      <view class='img '>
+        <image src='/pages/images/zhengxin.png '></image>
+      </view>
+      <view class='text '>
+        江湖信用{{zhengxin}}
+      </view>
+    </view>
+  </view>
+  <!--项目信息-->
+  <view class='content '>
+    <view class='item '>
+      <view class='item_l '>发布时间：</view>
+      <view class='item_r '>{{xm_fabuTime}}</view>
+    </view>
+    <view class='item '>
+      <view class='item_l '>项目区域：</view>
+      <view class='item_r '>{{province.name}}-{{city.name}}-{{county.name}}</view>
+    </view>
+    <view class='item '>
+      <view class='item_l '>项目地点：</view>
+      <view class='item_r '>{{xm_addr}}</view>
+    </view>
+    <view class='item '>
+      <view class='item_l '>项目周期：</view>
+      <view class='item_r '>{{xm_startTime}}到{{xm_endTime}}</view>
+    </view>
+    <view class='item '>
+      <view class='item_l '>项目类型：</view>
+      <view class='item_r '>{{xm_gcclass}}</view>
+    </view>
+    <view class='item ' hidden="{{xm_gzclass==''||xm_gzclass==null}}">
+      <view class='item_l '>所需工种：</view>
+      <view class='item_r '>{{xm_gzclass}}</view>
+    </view>
+    <view class='item ' hidden="{{xm_yezhuName==''||xm_yezhuName==null}}">
+      <view class='item_l '>业主单位：</view>
+      <view class='item_r '>{{xm_yezhuName}}</view>
+    </view>
+    <view class='item ' hidden="{{xm_chengbaoName==''||xm_chengbaoName==null}}">
+      <view class='item_l '>承包单位：</view>
+      <view class='item_r '>{{xm_chengbaoName}}</view>
+    </view>
+    <view class='item ' hidden="{{xm_beianhao==''||xm_beianhao==null}}">
+      <view class='item_l '>项目备案：</view>
+      <view class='item_r '>{{xm_beianhao}}</view>
+    </view>
+    <view>
+      <view class='xmxq_l '>项目详情：</view>
+      <view class='xmxq_r '>{{xm_info}}</view>
+    </view>
+    <view>
+      <view class="xm_fujiant">项目附件：
+        <text class='lookFiles ' bindtap='lookFiles1'>查看下载文件</text>
+      </view>
+      <view class='xm_fujianb ' wx:if='{{xm_fujian.length>0}}'>
+        <view wx:for='{{xm_fujian}}' wx:for-item='fujian_item' wx:for-index='fujian_index' data-zhi='{{fujian_item.p_file}}' data-xmName='{{xm_name}}' catchtap='fujiantap'>
+          <a class="a_" href='{{fujian_item.p_file}}'>附件{{fujian_index+1}}</a>
+          <a class="a_ a_1">下载</a>
+        </view>
+      </view>
+      <view class='xm_fujianb' wx:else> 暂无附件. . .</view>
+    </view>
+  </view>
+
+</template>
+
+<template is="item_xq" data='{{...xmInfo}}'></template>
+<view class='connection weui-footer weui-footer_fixed-bottom'>
+  <a href="javascript:;" class="weui-btn lianxi" catchtap='lianxi'>立即联系</a>
+  <a href="javascript:;" class="weui-btn yuyue" catchtap="yuyue">意向预约</a>
+</view>

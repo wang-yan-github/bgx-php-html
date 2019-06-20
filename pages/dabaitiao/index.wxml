@@ -1,0 +1,65 @@
+<!--pages/dabaitiao/index.wxml-->
+
+<image class='not_more' src='/pages/images/not_more.png'></image>
+
+<!-- banner -->
+<!-- <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper> -->
+
+<!-- 功能介绍 -->
+<!-- <wux-grids col="2">
+  <wux-grid>
+    <wux-icon type="logo-github" />
+    <view class='text title'>信用借款</view>
+    <view class='text'>江湖信用抵钱用</view>
+  </wux-grid>
+  <wux-grid>
+    <wux-icon type="logo-github" />
+    <view class='text title'>超值优惠</view>
+    <view class='text'>多种分期,0手续费</view>
+  </wux-grid>
+  <wux-grid>
+    <wux-icon type="logo-github" />
+    <view class='text title'>超高额度</view>
+    <view class='text'>最高50万,项目无忧</view>
+  </wux-grid>
+  <wux-grid>
+    <wux-icon type="logo-github" />
+    <view class='text title'>申请方便</view>
+    <view class='text'>专人服务,全称跟踪</view>
+  </wux-grid>
+</wux-grids> -->
+
+<!-- <wux-white-space />
+<wux-white-space />
+<wux-cell-group>
+  <wux-cell title="借款用途" extra="{{ title1 }}" bind:click="onClick1"></wux-cell>
+  <wux-cell title="借款金额" extra="{{ title2 }}" bind:click="onClick2"></wux-cell>
+  <wux-cell hover-class="none">
+    <wux-input label="您的称呼" />
+  </wux-cell>
+  <wux-cell hover-class="none">
+    <wux-input label="您的电话" value="{{ value }}" controlled error="{{ error }}" type="number" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:error="onError" />
+  </wux-cell>
+
+  <wux-cell title="您的位置" extra="{{ title3 }}" bind:click="onOpen3"></wux-cell>
+</wux-cell-group>
+
+
+<wux-select id="wux-select1" />
+<wux-select id="wux-select2" />
+<wux-cascader visible="{{ visible3 }}" default-value="{{ value3 }}" title="所在地区" options="{{ options3 }}" bind:close="onClose3" bind:change="onChange3" /> -->
+
+
+<!-- <wux-white-space />
+<wux-white-space />
+<wux-wing-blank size="default">
+  <wux-button block type="assertive">一键申请预约办理</wux-button>
+</wux-wing-blank>
+<wux-white-space />
+<wux-white-space /> -->

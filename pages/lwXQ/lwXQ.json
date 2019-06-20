@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "劳务详情",
+  "usingComponents": {
+    "wux-button": "../component/button/index",
+    "wux-actionsheet": "../component/actionsheet/index",
+    "wux-card": "../component/card/index",
+    "wux-wing-blank": "../component/wing-blank/index",
+    "wux-white-space": "../component/white-space/index"
+  }
+}

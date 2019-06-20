@@ -1,0 +1,47 @@
+<!--搜索  -->
+<wux-search-bar value="{{ searchText}}" auto="{{ false }}" placeholder="项目名称" bind:change="searchTextonChange" bind:clear="searchTextonClear" />
+<!--头部筛选  -->
+<!-- <import src='../teml/shaixuan_teml.wxml' />
+<view id="swiper-tab"> -->
+<!-- tab展示 -->
+<!-- <template is='swiper-tab' data='{{tabList,currentTab}}'> </template>
+  <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'> -->
+<!--单项选择-->
+<!-- <template is='tab_item' data='{{tab_item,_res}}'></template> -->
+<!--单项选择-->
+<!-- <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for='{{tab_item1}}' class="{{_res1 == index?'add_House':'add_city'}}" data-index="{{index}}" bindtap="clickHouse1" data-name="{{item}}">{{item}}</view>
+      </view>
+    </swiper-item> -->
+<!--单项选择-->
+<!-- <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for='{{tab_item2}}' class="{{_res2 == index?'add_House':'add_city'}}" data-index="{{index}}" bindtap="clickHouse2" data-name="{{item}}">{{item}}</view>
+      </view>
+    </swiper-item>
+
+  </swiper>
+</view>
+<view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view> -->
+
+<!--推送预约劳务列表-->
+<view class='item' data-bid='{{list.b_id}}' wx:if='{{listData.length>0}}' wx:for="{{listData}}" wx:for-item='list' catchtap='oprator_toggle' data-index="{{index}}">
+  <view class='item_t'>
+    <text>{{list.b_name?list.b_name:list.status == '包工侠待确认'?'项目待包工侠完善':'有项目请联系'+list.w_duty_phone}}<text class='new'>{{list.x_status == 0?'(最新)':''}}</text></text>
+    <!-- <image src='/pages/images/yirenzheng1.png'></image> -->
+    <text class='yirenzheng'>已认证</text>
+  </view>
+  <view class='item_c'>
+    <text>地址：{{list.p_addresss}}</text>
+  </view>
+  <view class='item_b'>
+    <view class='item_b_l'>来源：{{list.b_type}}</view>
+    <view class='item_b_r'>{{list.status}}</view>
+  </view>
+  <view class='item_oprator' wx:if="{{oprator_index==index && oprator_show}}">
+    <view class='item_oprator_item' data-wpid='{{list.w_pid}}' data-bid='{{list.b_id}}' data-laiyuan='{{list.b_type}}' data-status='{{list.status}}' data-wid='{{list.w_id}}' data-pid='{{list.p_id}}' wx:for="{{list.oprator}}" data-text='{{item}}' catchtap='opratorTap'>{{item}}</view>
+  </view>
+
+</view>
+<view class='notdata' wx:if='{{listData.length==0}}'>未查询到数据 . . .</view>

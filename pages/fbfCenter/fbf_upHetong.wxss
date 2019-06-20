@@ -1,0 +1,4 @@
+/* pages/fbfCenter/fbf_upHetong.wxss */
+.weui-uploader__bd{
+  padding: 30rpx;
+}

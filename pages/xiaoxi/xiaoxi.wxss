@@ -1,0 +1,63 @@
+/* pages/xiaoxi/xiaoxi.wxss */
+
+.item {
+  height: 160rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+}
+
+.item_l {
+  float: left;
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.newXiaoxi {
+  display: block;
+  /* width: 60rpx;
+  height: 40rpx; */
+  border-radius: 40rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 50rpx;
+  background-color: red;
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+  padding:2rpx 12rpx;
+}
+
+.item_l image {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: orange;
+  margin-top: 38rpx;
+  margin-left: 60rpx;
+}
+
+.item_r {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+.item_r_t, .item_r_b {
+  height: 60rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 30rpx;
+}
+
+.item_r_t {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  color: #444;
+}
+
+.item_r_b {
+  font-size: 28rpx;
+  color: #666;
+}

@@ -1,0 +1,171 @@
+<!--pages/fbfCenter/fabuXM.wxml-->
+<template name="fabuXM">
+  <view class="weui-cells__title">项目名称
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入项目名称" maxlength='15' value='{{xmName}}' bindinput='xmName' />
+        <label class='zishu'>{{zishu}}/15</label>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">工程类别
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChange" value="{{gcClass_index}}" range="{{gcClass}}">
+          <view class="picker">
+            {{gcClass[gcClass_index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">所需工种</view>
+  <view class="weui-cells__title">
+    <text wx:if='{{gongzhong.length>0}}'>已选：</text>
+    <text class='gongzhong' data-index='{{index}}' wx:for='{{gongzhong}}' bindtap='gongzhong_close'>{{item}}<text class='gongzhong_close'>x</text></text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChange1" value="{{gzClass_index}}" range="{{gzClass}}">
+          <view class="picker">
+            {{gzClass[gzClass_index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">开始时间
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <!-- <input type='text' class="weui-input" placeholder="格式： 1999-10-01" value='{{xm_startTime}}' bindinput='xm_startTime' /> -->
+        <picker mode="date" value="{{xm_startTime}}" start="2000-09-01" end="2099-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            开始时间：{{xm_startTime}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">竣工时间
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <!-- <input class="weui-input" placeholder="格式： 1999-10-01" value='{{xm_endTime}}' bindinput='xm_endTime' /> -->
+        <picker mode="date" value="{{xm_endTime}}" start="2000-09-01" end="2099-09-01" bindchange="bindDateChange1">
+          <view class="picker">
+            竣工时间：{{xm_endTime}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">项目预算</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input type='number' class="weui-input" class='yusuan' placeholder="请输入项目预算" value='{{xm_yusuan}}' bindinput='xm_yusuan' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">项目业主方</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入项目业主方" value='{{xm_yezhuName}}' bindinput='xm_yezhuName' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">项目承包方</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入项目承包方" value='{{xm_chengbaoName}}' bindinput='xm_chengbaoName' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">区域：
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <!-- 项目所在区域 -->
+        <import src="/pages/teml/citys_teml.wxml" />
+        <template is="citys" data="{{province,city,county,condition,provinces,citys,countys}}"></template>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">详细地址：
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入项目详细地址" value='{{xm_addr}}' bindinput='xm_addr' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">项目备案号：</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入项目备案号" value='{{xm_beianhao}}' bindinput='xm_beianhao' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">所需人数：</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input type='number' class="weui-input" placeholder="请输入所需人数" value='{{xm_number}}' bindinput='xm_number' />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">项目详情：
+    <text class='color_red'>*</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" value='{{xm_info}}' maxlength='1000' bindinput='xm_info' placeholder="请输入文本" style="height: 6em" adjust-position='{{true}}' />
+        <view class="weui-textarea-counter">{{zishu1}}/1000</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title">项目附件：</view>
+  <wux-upload list-type="picture-card" file-list="{{fileList}}" url="{{fileUrl}}" formData='{{formData}}' bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview" bind:remove='onRemove'>
+    <text style='font-size:30rpx;color:#666;'>上传</text>
+  </wux-upload>
+</template>
+
+
+<template is="fabuXM" data="{{xm_yusuan,xm_beianhao,xm_number,xm_yezhuName,xm_chengbaoName,xmName,xm_startTime,xm_endTime,zishu,zishu1,gongzhong,gcClass,gcClass_index,gzClass,gzClass_index,province,city,county,condition,provinces,citys,countys,fileList,formData,fileUrl,xm_info,xm_addr}}"></template>
+
+<!-- 企业基本资料的提交 -->
+<button class="weui-btn fabu" type="warn" bindtap='fabu'>发布</button>
+<wux-white-space />
+<wux-white-space />

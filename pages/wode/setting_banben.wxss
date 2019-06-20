@@ -1,0 +1,15 @@
+/* pages/wode/setting_banben.wxss */
+
+.logo {
+  height: 350rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #666;
+}
+
+.logo image {
+  height: 200rpx;
+  width: 200rpx;
+  display: block;
+  margin: 30rpx auto;
+}

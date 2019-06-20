@@ -1,0 +1,118 @@
+<!--pages/lwXQ/lwXQ.wxml-->
+<!--劳务概述-->
+<view class='lw_gs'>
+  <view class='lw_left'>
+    <image src="{{touxiang?touxiang:'/pages/images/touxiang.png'}}"></image>
+  </view>
+  <view class='lw_right'>
+    <view class='lw_name'>
+      <text class='name'> {{lwname}}({{type_}})</text>
+      <text class='credit'> 江湖信用:{{creditScore}}</text>
+      <!-- <image src='{{renzheng}}'></image> -->
+    </view>
+    <view class='lw_jineng'>
+      <text wx:if='{{type_ == "劳务"}}'>工种：{{jineng}}</text>
+      <text wx:else>行业：{{technicalType}}</text>
+    </view>
+    <view class='lw_tel'>
+      <image src='/pages/images/shouji.png'></image>
+      <text>{{tel}}</text>
+    </view>
+    <view class='lw_info'>
+      <text>{{sex}}</text>
+      <text class='line'>|</text>
+      <text>{{age}}岁</text>
+      <text class='line'>|</text>
+      <text>{{addr}}</text>
+      <text class='line'>|</text>
+      <text>从业{{cy_time}}年</text>
+    </view>
+  </view>
+</view>
+<!-- 自我介绍 -->
+<view class='introduceMyself'>
+  <view class='title_'>自我介绍</view>
+  <view class='content'>{{introduceMyself}}</view>
+</view>
+<view class='workPhoto'>
+  <view class='title_'>资质证书</view>
+  <view class='content' wx:if="{{certificates.length==0}}">这家伙很懒，什么都没留下</view>
+  <view class='content' wx:else>
+    <view class="weui-grids">
+      <view class='weui-grid' wx:for="{{certificates}}" wx:key="*this">
+        <image catchtap='previewImage' data-src='{{item.certificate}}' data-images='{{certificates}}' class="weui-grid__icon" src="{{item.certificate}}" />
+      </view>
+    </view>
+  </view>
+</view>
+<!--项目业绩-->
+<view class='XmYJ'>
+  <view class='title_'>项目业绩：
+    <text class='yeji_num'> {{yeji_content_show.length}} 条</text>
+  </view>
+  <view class='content' wx:if="{{yeji_content_show.length == 0}}">这家伙很懒，什么都没留下</view>
+  <view class='content' wx:else>
+    <!--业绩展示-->
+    <view class='yeji'>
+      <view class='yeji_content'>
+        <view class='yeji_content0' wx:for='{{yeji_content_show}}' wx:for-item='item1'>
+          <view class='yeji_content1'>业绩{{index+1}}：{{item1.name}}</view>
+          <view class='yeji_content2'>
+            <text>{{item1.start_time}}</text>到
+            <text>{{item1.end_time}}</text>
+          </view>
+          <view class='yeji_content3'>
+            <text class='yeji_content3_l' space="ensp">地  址：</text>{{item1.address}}</view>
+          <view class='yeji_content3'>
+            <text class='yeji_content3_l' space="ensp">业  主：</text>{{item1.p_owner_com?item1.p_owner_com:'无'}}</view>
+          <view class='yeji_content3'>
+            <text class='yeji_content3_l'>承包方：</text>{{item1.p_contract_com?item1.p_contract_com:'无'}}</view>
+          <view class='yeji_content4'>工作图片：</view>
+          <view class='yeji_content5 weui-grids'>
+            <block wx:for="{{item1.pFiles}}" wx:for-item='item2'>
+              <view class="weui-grid" hover-class="weui-grid_active" wx:if='{{item1.pFiles.length>0}}'>
+                <image catchtap='previewImage1' data-src='{{item2.pFile}}' data-images='{{item1.pFiles}}'  class="weui-grid__icon" src="{{item2.pFile}}" />
+              </view>
+            </block>
+          </view>
+          <view wx:if='{{item1.pFiles.length == 0}}'>
+            <view class='nonetupian'>这家伙很懒，暂无图片上传. . .</view>
+          </view>
+          <view class='yeji_content6'>施工内容：</view>
+          <view class='yeji_content7'>
+            {{item1.content}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 评论展示 -->
+<view class='pinglun'>
+  <view class="title_">
+    用户评论：
+    <text class='yeji_num'> {{reviewData.length?reviewData.length:0}} 条</text>
+  </view>
+  <wux-white-space />
+  <wux-white-space />
+  <wux-wing-blank>
+    <block wx:for='{{reviewData}}'>
+      <wux-card title="{{item.r_dutyName}}" extra="{{item.r_firstTime}}" thumb="{{item.r_headPortrait}}">
+        <view slot="body">{{item.r_firstComment}}</view>
+        <view slot="footer">项目：{{item.r_pName}}</view>
+      </wux-card>
+    </block>
+    <view class='no_pinlun' wx:if='{{reviewData.length == 0}}'>暂无评论</view>
+  </wux-wing-blank>
+</view>
+<!-- 底部操作 -->
+<view class='connection weui-footer weui-footer_fixed-bottom'>
+  <a href="javascript:;" class="weui-btn lianxi" catchtap='lianxi'>立即联系</a>
+  <a href="javascript:;" class="weui-btn yuyue" catchtap='yuyue'>立即预约</a>
+</view>
+
+<!-- 上拉菜单 -->
+<wux-actionsheet id="wux-actionsheet" />
+<view class="page__bd page__bd_spacing" wx:if='{{visible}}'>
+  <wux-button block type="light" bind:click="showActionSheet2">请选择项目</wux-button>
+</view>

@@ -1,0 +1,6 @@
+/* pages/bgxCenter/bgx_tsYyLW.wxss */
+@import '../teml/shaixuan_teml.wxss';
+@import "../fbfCenter/tsYyLW.wxss";
+.new{
+  color: red;
+}

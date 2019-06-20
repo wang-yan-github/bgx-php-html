@@ -1,0 +1,40 @@
+<!--pages/wode/wode_discover.wxml-->
+<!-- 导航栏 -->
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='0'>
+      <image src="/pages/images/zgzh.png"></image>招工找活</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='1'>
+      <image src="/pages/images/gfzq.png"></image>官方专区</view>
+  </view>
+</view>
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='search_tiezi' data-index='2'>
+      <image src="/pages/images/essc.png"></image>二手市场</view>
+  </view>
+  <view class="weui-flex__item">
+    <view class="placeholder" catchtap='more'>
+      <image src="/pages/images/more.png"></image>更多</view>
+  </view>
+</view>
+<view class='more' hidden='{{isMore}}' bindtap='isHide'></view>
+<view class='more1' hidden='{{isMore}}'>
+  <view class="weui-cells">
+    <view class="weui-cell" catchtap='search_tiezi' wx:for='{{more1}}' data-index='{{index}}'>
+      <view class="weui-cell__bd huati">
+        <view class='huati_l'>
+          <image src='{{item.image}}'></image>
+        </view>
+        <view class='huati_r'>
+          <view>{{item.name}}</view>
+          <view class="describe">{{item.describe}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<import src='../discover/discover.wxml'></import>
+<template is='gyq' data='{{dataList,zhankai_index,pinglunData,pinglun_index,pinglun_content,isbottom,del}}'></template>

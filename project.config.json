@@ -1,0 +1,1506 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx969a0bc85be1ccf2",
+	"projectname": "%E5%8C%85%E5%B7%A5%E4%BE%A02",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 243,
+			"list": [
+				{
+					"id": 0,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录页面",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "发包方推送预约项目管理",
+					"pathName": "pages/fbfCenter/tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心完善信息页面",
+					"pathName": "pages/lwCompanyCenter/lwCompanyInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发包方中心完善信息页面",
+					"pathName": "pages/fbfCenter/fabaofangPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "区域模版",
+					"pathName": "pages/teml/citys_teml",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发包方发布信息",
+					"pathName": "pages/fbfCenter/fabuXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情模版",
+					"pathName": "pages/xmXQ/xmXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠基本信息",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务基本信息",
+					"pathName": "pages/lwCenter/lwPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "切换",
+					"pathName": "pages/wode/qiehuanRole",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "切换页面",
+					"pathName": "pages/wode/qiehuanRole",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "切换页面",
+					"pathName": "pages/wode/qiehuanRole",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/lwCompanyCenter/lwCompanyInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务详情",
+					"pathName": "pages/fbfCenter/tsYyLW_xiangq",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW_hetongQueren",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW_xiangq",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW_hetongQueren",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/fbfCenter/tsYyLW_viewLogs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日历",
+					"pathName": "pages/teml/calender",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "查看日志",
+					"pathName": "pages/fbfCenter/tsYyLW_viewLogs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司班组管理",
+					"pathName": "pages/lwCompanyCenter/lwbanzu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目管理",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务评价",
+					"pathName": "pages/fbfCenter/tsYyLW_evaluate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW_evaluate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务",
+					"pathName": "pages/fbfCenter/tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目上传合同",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM_upHetong",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目上传合同",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约项目上传合同",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "aa",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司推送预约劳务列表",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改合同",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM_editHetong",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推送预约劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwbanzu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM_tuiLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司项目管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司劳务管理",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/fbfCenter/fabaofangPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务公司中心",
+					"pathName": "pages/lwCenter/lwPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/wode/wode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/bgxCenter/bgx_tsYyLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/lwCompanyCenter/lwCompany_tsYyLW_tuiLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠完善信息页面",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/wode/qiehuanRole",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录页面",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "找项目",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "找项目",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/teml/shaixuan_teml",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/fbfCenter/fabuXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/teml/shaixuan_teml",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/lwXQ/lwXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/xmXQ/xmXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/xmXQ/xmXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findlw/findlw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/xiaoxi/xiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/xiaoxi/xiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工友圈",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "重置密码",
+					"pathName": "pages/pwdreset/pwdreset",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "重置密码",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "重置密码",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "s首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠",
+					"pathName": "pages/bgxCenter/bgxPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "包工侠",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布项目",
+					"pathName": "pages/fbfCenter/fabuXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布项目",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日志",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册页",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发包方完善信息",
+					"pathName": "pages/fbfCenter/fabaofangPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发包方注册页面",
+					"pathName": "pages/fbfCenter/fabaofangPersonalInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shouye",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "zhuce",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日志",
+					"pathName": "pages/bgxCenter/bgx_tsYyXM_addLogs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日志",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "切换身份",
+					"pathName": "pages/wode/qiehuanRole",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "查看文件",
+					"pathName": "pages/xmXQ/lookFile",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "查看文件",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户协议",
+					"pathName": "pages/UserAgreement/UserAgreement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发帖",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发帖",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发帖",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发帖",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发帖",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fabu",
+					"pathName": "pages/fbfCenter/fabuXM",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/fbfCenter/fbf_upHetong",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "劳务详情页",
+					"pathName": "pages/lwXQ/lwXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/fbfCenter/tsYyLW_evaluate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改",
+					"pathName": "pages/fbfCenter/tsYyXM_modify",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "帮助中心",
+					"pathName": "pages/wode/helpCenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "pages/wode/yijianfankui",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推劳务",
+					"pathName": "pages/bgxCenter/bgx_tsYyLW_tuiLW",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/xiaoxi/xiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/findXm/findXm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/xmXQ/xmXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/lwXQ/lwXQ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/fbfCenter/tsYyLW_xiangq",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/fbfCenter/tsYyLW_evaluate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/bgxCenter/bgx_evaluate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover_fabu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/liaotianXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/pageXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/liaotianXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/liaotianXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/liaotianXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/xiaoxi/liaotianXiaoxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/wode/setting_banben",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实名认证",
+					"pathName": "pages/wode/certification",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实名认证",
+					"pathName": "pages/wode/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改手机号",
+					"pathName": "pages/wode/editPhone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改手机号",
+					"pathName": "pages/wode/setting_workStatus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改手机号",
+					"pathName": "pages/wode/editPhone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置工作状态",
+					"pathName": "pages/wode/setting_workStatus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置工作状态",
+					"pathName": "pages/wode/setting_workStatus",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置工作状态",
+					"pathName": "pages/wode/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "打白条",
+					"pathName": "pages/dabaitiao/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "打白条",
+					"pathName": "pages/dabaitiao/index"
+				}
+			]
+		}
+	}
+}

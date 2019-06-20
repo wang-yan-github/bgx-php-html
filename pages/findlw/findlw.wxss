@@ -1,0 +1,129 @@
+@import '../teml/shaixuan_teml.wxss';
+
+page {
+  background-color: #f8f8f9;
+}
+
+.lw_item {
+  min-height: 242rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+
+.lw_t {
+  height: 100rpx;
+  overflow: hidden;
+  padding: 10rpx 0;
+  border-bottom: 1rpx dotted #ccc;
+}
+
+.lw_t_l {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.lw_t_l image {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  background-color: #eee;
+  border-radius: 6rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.lw_t_r_t, .lw_t_r_b {
+  height: 50rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+
+.line {
+  font-size: 28rpx;
+  margin: 0 20rpx;
+  color: #ccc;
+}
+
+.nbsp {
+  margin: 0 20rpx;
+}
+
+.lw_t_r {
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+
+.lw_b {
+  min-height: 100rpx;
+  padding: 10rpx 30rpx;
+}
+
+.lw_b_t, .lw_b_b {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #444;
+}
+
+.yirenzheng, .weirenzheng, .bgt, .sgy {
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  top: 10rpx;
+}
+
+.yirenzheng {
+  right: 30rpx;
+  color: #52c41a;
+  background-color: #f6ffed;
+  border: 1rpx solid #b7eb8f;
+}
+
+.weirenzheng {
+  right: 30rpx;
+  color: #fa8c16;
+  background-color: #fff7e6;
+  border: 1rpx solid #ffd591;
+}
+
+.bgt {
+  right: 130rpx;
+  color: #722ed1;
+  background-color: #f9f0ff;
+  border: 1rpx solid #d3adf7;
+}
+
+.sgy {
+  right: 130rpx;
+  color: #2f54eb;
+  background-color: #f0f5ff;
+  border: 1rpx solid #adc6ff;
+}
+
+.quyu .qy {
+  width: 49%;
+}
+
+.weui-search-bar {
+  height: 110rpx;
+  display: block;
+}
+
+.isbottom {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: #ec414c;
+}

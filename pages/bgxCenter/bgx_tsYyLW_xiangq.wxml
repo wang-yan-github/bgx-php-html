@@ -1,0 +1,96 @@
+<view class='lw_h'>
+  <view class='lw_h_l'>
+    <image src='{{lw_info.headPortrait?lw_info.headPortrait:"/pages/images/touxiang.png"}}'></image>
+  </view>
+  <view class='lw_h_r'>
+    <view class='lw_h_r_t'></view>
+    <view class='lw_h_r_c'>
+      <view class='title'>
+        <text>{{lw_info.dutyName}}</text>
+      </view>
+      <view>
+        <image src='/pages/images/yirenzheng.png'></image>
+      </view>
+      <view class='age_sex'>
+        <text>{{lw_info.sex}}</text>|
+        <text>{{lw_info.age}}岁</text>
+      </view>
+      <view class='addr'>
+        <text>家乡：四川省成都市</text>
+      </view>
+    </view>
+    <view class='lw_h_r_b'></view>
+  </view>
+</view>
+
+<view class='content'>
+  <view>
+    <text>劳务性质：</text>
+    <text>{{lw_info.type}}</text>
+  </view>
+  <view>
+    <text>工程类别：</text>
+    <text>{{lw_info.technicalType?lw_info.technicalType:'无'}}</text>
+  </view>
+  <view>
+    <text space="ensp">工    种：</text>
+    <text>{{lw_info.consType}}</text>
+  </view>
+  <view>
+    <text>从业时间：</text>
+    <text>{{lw_info.work_time}}年</text>
+  </view>
+  <view>
+    <text>可施工地：</text>
+    <text>{{workAddress}}</text>
+  </view>
+</view>
+<view class='xm_content'>
+  <view>
+    <text>项目名称：</text>
+    <text>{{lw_info.p_name?lw_info.p_name:'无'}}</text>
+  </view>
+  <!-- <view><text>项目来源：</text><text>{{lw_info.}}</text></view> -->
+  <view>
+    <text>项目周期：</text>
+    <text>{{lw_info.p_start_time?lw_info.p_start_time:'无'}}到{{lw_info.p_end_time?lw_info.p_end_time:'无'}}</text>
+  </view>
+  <view>
+    <text>项目地址：</text>
+    <text>{{lw_info.p_addr?lw_info.p_addr:'无'}}</text>
+  </view>
+  <view>
+    <text>项目业主：</text>
+    <text>{{lw_info.p_ownerCom?lw_info.p_ownerCom:'无'}}</text>
+  </view>
+  <view>
+    <text space="ensp">承 包 方：</text>
+    <text>{{lw_info.p_contract?lw_info.p_contract:'无'}}</text>
+  </view>
+  <view>
+    <text>项目描述：</text>
+    <text>{{lw_info.p_remark?lw_info.p_remark:'无'}}</text>
+  </view>
+</view>
+
+<!-- <view class="weui-cells__title">项目合同：</view>
+  <view class="weui-uploader">
+    <view class="weui-uploader__bd">
+      <block wx:for="{{pics}}" wx:key="*this">
+        <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+          <image class="weui-uploader__img" src="{{item.img}}" mode="aspectFill" />
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">劳务合同：</view>
+  <view class="weui-uploader">
+    <view class="weui-uploader__bd">
+      <block wx:for="{{pics1}}" wx:key="*this">
+        <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+          <image class="weui-uploader__img" src="{{item.img}}" mode="aspectFill" />
+        </view>
+      </block>
+    </view>
+  </view> -->

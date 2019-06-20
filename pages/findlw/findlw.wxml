@@ -1,0 +1,64 @@
+<!--搜索  -->
+<wux-search-bar value="{{ searchText}}" auto="{{ false }}" placeholder="劳务名称" bind:change="searchTextonChange" bind:clear="searchTextonClear" />
+
+<!-- 筛选条件 -->
+<import src='../teml/shaixuan_teml.wxml' />
+<view id="swiper-tab">
+  <!-- tab展示 -->
+  <template is='swiper-tab' data='{{tabList,currentTab}}'> </template>
+  <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'>
+    <!--左右结构-->
+    <template is="shaixuan_lr" data="{{selected0,selected1,selected2,shaixuan_lr_l,selected_index,_sum,_mum,gc_type,gz_type}}"></template>
+    <!--左右结构区域-->
+    <template is='citys1' data='{{selected_index1,selected_index2,cityleft,citycenter}}'></template>
+    <!--单项选择-->
+    <template is='tab_item' data='{{tab_item,_res}}'></template>
+    <swiper-item>
+      <view class="shaixuankuang">
+        <template is="shaixuan_item" data='{{shaixuan,shaixuan_}}'></template>
+        <view class="qingkong">
+          <span class="tianjian" bindtap="qingchu">清除条件</span>
+          <p class="queren" bindtap="queren">确认</p>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+<!-- 劳务列表 -->
+<view wx:for='{{lwList}}'>
+  <wux-wing-blank size="small">
+    <view class='lw_item' data-wid='{{item.w_id}}' bindtap='item_click'>
+      <view class='lw_t'>
+        <view class='lw_t_l'>
+          <image src="{{item.head_portrait?item.head_portrait:'/pages/images/touxiang.png'}}"></image>
+        </view>
+        <view class='lw_t_r'>
+          <view class='lw_t_r_t'>
+            {{item.duty_name}}（{{item.age}}岁）
+            <text class="{{item.type =='劳务'?'sgy':'bgt'}}">{{item.type =='劳务'?item.type:item.type}}</text>
+            <text class="{{item.authentica?'yirenzheng':'weirenzheng'}}">{{item.authentica?'已认证':'未认证'}}</text>
+          </view>
+          <view class='lw_t_r_b'>
+            从业{{item.work_time?item.work_time:"0"}}年
+            <text class='line'>|</text>{{item.worker_status?'忙碌':'空闲'}}
+            <text class='line'>|</text>江湖信用{{item.credit_score}}
+          </view>
+        </view>
+      </view>
+      <view class='lw_b'>
+        <view class='lw_b_t' hidden='{{item.type =="包工侠"}}'>所属工种： {{item.cons_type?item.cons_type:'无'}}</view>
+        <view class='lw_b_t'>完成项目：{{item.achieveCount}}个
+          <text class='nbsp'></text>
+          <text hidden='{{item.type == "劳务"}}'>行业：{{item.technical_type}}</text>
+        </view>
+        <view class='lw_b_b'>可施工地： {{item.region?item.region:'无'}}</view>
+      </view>
+    </view>
+  </wux-wing-blank>
+</view>
+<wux-white-space />
+<wux-white-space />
+<view class='isbottom'>--我是有底线的--</view>
+<wux-white-space />
+<wux-white-space />

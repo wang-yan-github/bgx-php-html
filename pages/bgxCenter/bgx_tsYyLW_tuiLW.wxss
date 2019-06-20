@@ -1,0 +1,25 @@
+@import '../fbfCenter/fabuXM.wxss';
+@import '../bgxCenter/bgxPersonalInfo.wxss';
+.title{
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  background-color: #eee;
+}
+.content{
+  padding-left: 30rpx;
+  color: #666;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+}
+.item1{
+  padding-left: 30rpx;
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.item1 .gongzhong{
+  padding: 5rpx 10rpx;
+}

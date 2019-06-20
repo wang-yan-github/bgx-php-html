@@ -1,0 +1,171 @@
+/* 列表详情 */
+@import "../teml/citys_teml.wxss";
+
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+}
+
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.bg-gray {
+  background-color: #ccc !important;
+  border-bottom: 1rpx solid #fff !important;
+}
+
+.li .icon-xiala, .icon-shangjiantou {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.red {
+  color: #fe2e2e;
+}
+
+.right image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+.weui-navbar__item {
+  outline: 1rpx solid #ccc;
+  background-color: #fff;
+  padding: 15rpx 0;
+}
+
+.weui-icon-radio {
+  border: none;
+}
+
+.weui-uploader__bd {
+  margin: 0;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+
+.info_tj {
+  margin-bottom: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.shenhe {
+  margin: 30rpx 0;
+  padding: 30rpx;
+  background-color: #fff;
+  border: 2rpx solid #ccc;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+
+.shenhe_title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.shenhe_time {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.shenhe_l {
+  float: left;
+  width: 35%;
+  font-size: 28rpx;
+  min-height: 60rpx;
+  line-height: 60rpx;
+  color: #000;
+  overflow: hidden;
+}
+
+.shenhe_r {
+  float: left;
+  width: 63%;
+  font-size: 26rpx;
+  min-height: 60rpx;
+  line-height: 60rpx;
+  color: #000;
+}
+
+.btn_ {
+  color: #fff;
+  background-color: #ec414c;
+  font-size: 24rpx;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.color_red {
+  color: red;
+  font-size: 30rpx;
+  position: relative;
+  left: 10rpx;
+  top: 5rpx;
+}
+
+.weui-tab__panel {
+  padding-top: 70rpx;
+}
+
+.weui-label {
+  border: none;
+}
+
+.wx_label {
+  width: 150rpx;
+  font-size: 30rpx;
+}
+
+.weui-input {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.yaoqingma {
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.shenhe_oprator {
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #ccc;
+  padding: 10rpx 0;
+  color: orangered;
+}
+
+.oprator_btn {
+  position: relative;
+  height: 60rpx;
+}
+
+.weui-navbar__item {
+  color: #ccc;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+  color: #ef473a;
+}

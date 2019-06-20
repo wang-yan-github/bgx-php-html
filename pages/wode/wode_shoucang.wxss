@@ -1,0 +1,7 @@
+/* pages/wode/wode_shoucang.wxss */
+@import '../discover/discover.wxss';
+.noneSoucang{
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #666;
+}

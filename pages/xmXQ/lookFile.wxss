@@ -1,0 +1,22 @@
+/* pages/xmXQ/lookFile.wxss */
+.page__title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #666;
+  padding-left: 30rpx;
+}
+.wux-grid__thumb{
+  width: 160rpx;
+  height: 160rpx;
+}
+.remove{
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+}
+.noImages{
+  padding: 30rpx;
+  color: #666;
+  font-size: 30rpx;
+}

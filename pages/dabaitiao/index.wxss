@@ -1,0 +1,19 @@
+/* pages/dabaitiao/index.wxss */
+
+.not_more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300rpx;
+  margin-left: -290rpx;
+}
+
+.text {
+  text-align: center;
+  font-size: 26rpx;
+  color: #ec4141;
+}
+
+.title {
+  font-size: 30rpx;
+}

@@ -1,0 +1,331 @@
+/* pages/lwXQ/lwXQ.wxss */
+
+page {
+  padding-bottom: 150rpx;
+}
+
+.lw_gs {
+  overflow: hidden;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.lw_left {
+  float: left;
+  width: 30%;
+  height: 200rpx;
+}
+
+.lw_left image {
+  max-height: 160rpx;
+  max-width: 160rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #eee;
+}
+
+.lw_right {
+  float: left;
+  width: 70%;
+  height: 200rpx;
+}
+
+.lw_name {
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.lw_jineng, .lw_tel, .lw_info {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding-bottom: 5rpx;
+  color: #696969;
+}
+
+.lw_name .name {
+  font-size: 40rpx;
+  line-height: 70rpx;
+}
+
+.lw_name .credit {
+  font-size: 28rpx;
+  color: red;
+  margin-left: 30rpx;
+  line-height: 80rpx;
+}
+
+.lw_name image {
+  max-height: 45rpx;
+  max-width: 100rpx;
+  margin-left: 45rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+.lw_jineng {
+  position: relative;
+  top: -5rpx;
+}
+
+.lw_tel image {
+  max-height: 35rpx;
+  max-width: 40rpx;
+  position: relative;
+  left: -5rpx;
+}
+
+.lw_info {
+  position: relative;
+}
+
+.lw_info text {
+  padding-right: 20rpx;
+}
+
+.lw_tel text {
+  line-height: 40rpx;
+  position: relative;
+  top: -5rpx;
+}
+
+.lw_info .line {
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  font-size: 22rpx;
+  color: #ccc;
+}
+
+.introduceMyself {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.title_ {
+  height: 80rpx;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.content {
+  margin: 0 20rpx;
+  font-size: 32rpx;
+  color: #888;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.workPhoto {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.weui-grid {
+  padding: 20rpx;
+}
+
+.weui-grid__icon {
+  width: 200rpx;
+  height: 200rpx;
+  border: 1rpx solid #ccc;
+}
+
+.XmYJ {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.connection {
+  height: 100rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+  box-shadow: -10rpx 0 10rpx #ccc;
+}
+
+.connection .weui-btn {
+  display: inline-block;
+  border: 1rpx solid #fff;
+  color: #fff;
+  font-size: 30rpx;
+  width: 300rpx;
+  margin: 10rpx 30rpx;
+  border-radius: 20rpx;
+}
+
+.connection .lianxi {
+  border: 1px solid red;
+  color: red;
+  width: 300rpx;
+  height: 78rpx;
+}
+
+.connection .yuyue {
+  background-color: red;
+  color: #fff;
+  width: 300rpx;
+  border: 1rpx solid #ccc;
+  height: 80rpx;
+}
+
+.weui-footer_fixed-bottom {
+  bottom: 0;
+}
+
+.weui-grids {
+  border: none;
+}
+
+.weui-grid {
+  border: none;
+}
+
+/* -------------- */
+
+.yeji {
+  min-height: 100rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.edit {
+  right: 80rpx;
+}
+
+.delete {
+  right: 20rpx;
+}
+
+.yeji_title {
+  padding: 20rpx 0;
+  margin-left: 30rpx;
+  font-size: 42rpx;
+  color: #666;
+}
+
+.yeji_content {
+  font-size: 28rpx;
+}
+
+.add_yeji_content {
+  color: #666;
+}
+
+.yeji_Info_zishu {
+  display: block;
+  position: absolute;
+  right: 20rpx;
+  top: 260rpx;
+  color: #666;
+}
+
+.yeji_content0 {
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  background-color: #f8f8f9;
+}
+
+.yeji_content1 {
+  font-size: 34rpx;
+  padding-left: 20rpx;
+  color: #444;
+}
+
+.yeji_content2, .yeji_content3 {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.yeji_content2 {
+  font-size: 26rpx;
+  color: #666;
+  padding-left: 20rpx;
+}
+
+.yeji_content3 {
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  color: #333;
+}
+
+.yeji_content4 {
+  font-size: 28rpx;
+  color: orangered;
+  margin: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.weui-grid__icon {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.weui-grid {
+  border: none;
+  padding: 20rpx 0;
+}
+
+.weui-textarea {
+  overflow: auto;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.yeji_content6 {
+  font-size: 28rpx;
+  color: orangered;
+  border-bottom: 2rpx solid #ccc;
+  margin: 20rpx;
+}
+
+.yeji_content7 {
+  font-size: 30rpx;
+  color: #666;
+  padding: 20rpx;
+}
+
+.weui-uploader__file {
+  position: relative;
+}
+
+.nonetupian {
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+
+.yeji_content3_l {
+  display: inline-block;
+  width: 120rpx;
+}
+
+.weui-textarea {
+  font-size: 30rpx;
+  padding: 0;
+  padding-top: 20rpx;
+}
+
+.weui-textarea-counter {
+  position: relative;
+  top: -10rpx;
+  color: #666;
+}
+
+.yeji_num {
+  font-size: 30rpx;
+  color: #ccc;
+}
+
+.pinglun {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.no_pinlun {
+  font-size: 30rpx;
+  color: #888;
+}

@@ -1,0 +1,54 @@
+/* pages/pwdreset/pwdreset.wxss */
+page{
+  padding-top: 100rpx;
+}
+.weui-cell__bd {
+  border: 1rpx solid #eee;
+}
+.weui-agree__checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  font-size: 0;
+  border: 1px solid #d1d1d1;
+  background-color: red;
+  border-radius: 3px;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  vertical-align: 0;
+  top: 2px;
+}
+.weui-btn_primary {
+    background-color: #1AAD19;
+}
+
+.weui-agree {
+display:block;
+padding:.5em 30rpx;
+font-size:13px;
+}
+
+.weui-input{
+  padding-left: 10rpx;
+}
+navigator{
+  display: inline-block;
+  color: blue;
+}
+
+.weui-cell__ft{
+  padding-right: 30rpx;
+}
+.weui-btn_primary {
+  margin: 0 30rpx;
+}
+.weui-input {
+  border: 0.5rpx solid #dcdcdc;
+  background-color: #fff;
+  padding-left: 20rpx;
+}
+
+.weui-footer__link {
+  color: #888;
+}

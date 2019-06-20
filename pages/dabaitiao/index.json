@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "打白条",
+  "usingComponents": {
+    "wux-icon": "../component/icon/index",
+    "wux-grids": "../component/grids/index",
+    "wux-grid": "../component/grid/index",
+    "wux-cell-group": "../component/cell-group/index",
+    "wux-cell": "../component/cell/index",
+    "wux-select": "../component/select/index",
+    "wux-input": "../component/input/index",
+    "wux-cascader": "../component/cascader/index",
+    "wux-button": "../component/button/index",
+    "wux-white-space": "../component/white-space/index",
+    "wux-wing-blank": "../component/wing-blank/index"
+  }
+}

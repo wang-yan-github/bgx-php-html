@@ -1,0 +1,9 @@
+/* pages/pincailiao/index.wxss */
+
+.not_more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300rpx;
+  margin-left: -290rpx;
+}

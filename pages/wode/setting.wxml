@@ -1,0 +1,38 @@
+<!--pages/wode/setting.wxml-->
+<wux-white-space />
+<wux-white-space />
+<block wx:if='{{!isfbf}}'>
+  <wux-cell-group>
+    <wux-cell title="工作状态" is-link bind:click='settingWorkStatus'></wux-cell>
+  </wux-cell-group>
+</block>
+
+<wux-cell-group>
+  <wux-cell title="实名认证" is-link bind:click='settingNameOK'></wux-cell>
+</wux-cell-group>
+
+
+<wux-cell-group>
+  <wux-cell title="我的标签" is-link bind:click='settingWodeTag'></wux-cell>
+</wux-cell-group>
+
+<wux-white-space size="default" />
+<wux-white-space size="default" />
+<wux-cell-group>
+  <wux-cell title="修改手机号" is-link bind:click='settingPhone'></wux-cell>
+</wux-cell-group>
+<wux-cell-group>
+  <wux-cell title="修改密码" is-link bind:click='settingpwd'></wux-cell>
+</wux-cell-group>
+
+<wux-white-space size="default" />
+<wux-white-space size="default" />
+<wux-cell-group>
+  <wux-cell title="意见反馈" is-link bind:click='yijianfankui'></wux-cell>
+</wux-cell-group>
+<wux-cell-group>
+  <wux-cell title="帮助中心" is-link bind:click='helpCenter'></wux-cell>
+</wux-cell-group>
+<wux-cell-group>
+  <wux-cell title="联系我们" is-link bind:click='settingBanbenInfo'></wux-cell>
+</wux-cell-group>

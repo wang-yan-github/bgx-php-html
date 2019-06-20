@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "日志查看",
+  "usingComponents": {
+    "calendar": "plugin://calendar/calendar"
+  }
+}

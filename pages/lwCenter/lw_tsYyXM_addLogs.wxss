@@ -1,0 +1,13 @@
+textarea{
+  height: 600rpx;
+  width: 100%;
+  padding: 20rpx;
+  background-color: #fff;
+}
+button{
+  margin-top: 50rpx;
+  background-color: red;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color:#fff;
+}

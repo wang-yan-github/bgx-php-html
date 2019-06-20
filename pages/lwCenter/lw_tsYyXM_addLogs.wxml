@@ -1,0 +1,4 @@
+<textarea   bindinput='logText' placeholder="请输入日志内容" />
+<button bindtap='submitLog'>提交</button>
+
+

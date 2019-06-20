@@ -1,0 +1,43 @@
+<!--pages/wode/certification.wxml-->
+<wux-alert closable theme="dark" label="如果暂时没有企业资质证书，请以个人身份发包" />
+<wux-white-space />
+<wux-white-space />
+
+<view class='title'>
+  <text>添加头像</text>
+  <text class='title_discrible'>请上传本人正面免冠头像照片</text>
+</view>
+
+<wux-wing-blank>
+  <view class='touxiang'>
+    <image src='/pages/images/touxiang.png'></image>
+    <text>点击上传</text>
+  </view>
+</wux-wing-blank>
+
+<view class='title'>
+  <text>添加身份证</text>
+</view>
+
+<wux-wing-blank>
+  <view class='swap'>
+    <view class='card'>
+      <image src='/pages/images/idcard_z.png'> </image>
+      <text>点击上传身份证正面</text>
+    </view>
+    <view class='card'>
+      <image src='/pages/images/idcard_f.png'></image>
+      <text>点击上传身份证反面</text>
+    </view>
+    <view class='point'>
+      <view class='point_l active'></view>
+      <view class='point_r'></view>
+    </view>
+  </view>
+</wux-wing-blank>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <wux-wing-blank>
+    <wux-button block type="assertive">提交</wux-button>
+  </wux-wing-blank>
+</view>

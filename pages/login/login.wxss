@@ -1,0 +1,32 @@
+/* pages/login/login.wxss */
+
+.weui-tab__content {
+  padding: 100rpx 0;
+}
+
+.weui-btn-area {
+  margin: 3em 0 0.3em;
+}
+
+.mr10 {
+  margin-right: 10rpx;
+}
+
+navigator {
+  display: inline-block;
+  color: #ef473a;
+}
+
+.juese {
+  border: 1rpx solid #dcdcdc;
+}
+
+.weui-input {
+  border: 0.5rpx solid #dcdcdc;
+  background-color: #fff;
+  padding-left: 20rpx;
+}
+
+.weui-footer__link {
+  color: #888;
+}

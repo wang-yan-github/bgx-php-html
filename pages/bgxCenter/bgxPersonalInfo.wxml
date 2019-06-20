@@ -1,0 +1,393 @@
+<!--分类 -->
+<view class="li" data-index="0" bindtap='changeToggle'>
+  <view class="left">基本资料</view>
+  <view class="right">
+    <image src="{{selectedFlag[0]?'/pages/images/jiantou_shang.png':'/pages/images/jiantou_xia.png'}}"> </image>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[0]}}" class='content'>
+  <!--完善个人信息-->
+  <view class="weui-tab">
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content">
+        <view class="weui-cells__title">头像</view>
+        <wux-upload count="1" name='file' showRemoveIcon="{{imgInfoDisabled}}" disabled='{{infoDisabled}}' list-type="picture-card" file-list="{{ fileList}}" url="{{fileUrl}}" formData='{{formData}}' bind:change="onChange" bind:success="onSuccess" bind:fail="onFail"
+          bind:complete="onComplete" bind:preview="onPreview" bind:remove='onRemove'>
+          <text style='font-size:30rpx;color:#666;'>上传</text>
+        </wux-upload>
+
+        <view class="weui-cells__title">姓名</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{nameDisabled}}' placeholder="请输入姓名" value='{{name}}' bindinput='name' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">电话</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{telDisabled}}' placeholder="请输入电话号码" value='{{tel}}' bindinput='tel' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">座机</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input type='text' class="weui-input" disabled='{{infoDisabled}}' placeholder="格式：028-0000000" value='{{zuoji}}' bindinput='zuoji' bindblur='zuoji1' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">所属劳务公司</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" maxlength='20' disabled='{{infoDisabled}}' placeholder="请输入所属劳务公司" value='{{lwCompany}}' bindinput='lwCompany' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">户籍所在地
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <!--省市区  -->
+              <import src="/pages/teml/citys_teml.wxml" />
+              <template is="citys" data="{{province,city,county,condition,provinces,citys,countys,isDisabled}}"></template>
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">户籍所在地详址
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{infoDisabled}}' placeholder="请输入详细地址" value='{{addr}}' bindinput='addr' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">从业时间
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input type='number' class="weui-input" disabled='{{infoDisabled}}' placeholder="从业的年限" value='{{congye_time}}' bindinput='congye_time' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">身份证
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{infoDisabled}}' placeholder="请输入身份证号码" value='{{idcard}}' bindblur='idcard' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title" hidden='{{shenfenDisabled}}'>出生日期</view>
+        <view class="weui-cells weui-cells_after-title" hidden='{{shenfenDisabled}}'>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{shenfenDisabled1}}' value='{{birthday}}' bindinput='birthday' />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells__title" hidden='{{shenfenDisabled}}'>年龄</view>
+        <view class="weui-cells weui-cells_after-title" hidden='{{shenfenDisabled}}'>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{shenfenDisabled1}}' value='{{age}}' bindinput='age' />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells__title" hidden='{{shenfenDisabled}}'>性别</view>
+        <view class="weui-cells weui-cells_after-title" hidden='{{shenfenDisabled}}'>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{shenfenDisabled1}}' value='{{sex}}' bindinput='sex' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">学历
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange0" disabled='{{infoDisabled}}' value="{{index}}" range="{{educationBackground }}">
+                <view class="picker">
+                  {{educationBackground [education_index]}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">可施工地
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells__title">
+          <text wx:if='{{canWorkAddr.length>0}}'>已选：</text>
+          <text class='canWorkAddr' data-index='{{index}}' wx:for='{{canWorkAddr}}' wx:key="*this" catchtap='canWorkAddr_close'>{{item.name}}<text class='canWorkAddr_close' wx:if='{{!isDisabled2}}'>x</text></text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <!--省市  -->
+              <import src="/pages/teml/citys_teml.wxml" />
+              <template is="citys2" data="{{province2,city2,county2,condition2,provinces2,citys2,countys2,isDisabled2}}"></template>
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">可承接项目类型
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells__title">
+          <text wx:if='{{canWorkgcClass.length>0}}'>已选：</text>
+          <text class='canWorkAddr' data-index='{{index}}' wx:for='{{canWorkgcClass}}' wx:key="*this" bindtap='canWorkgcClass_close'>{{item}}<text class='canWorkAddr_close' wx:if='{{!infoDisabled}}'>x</text></text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" disabled='{{infoDisabled}}' value="{{gcClass_index}}" range="{{gcClass}}">
+                <view class="picker">
+                  {{gcClass[gcClass_index]}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+        <!-- <view class="weui-cells__title">工种
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells__title">
+          <text wx:if='{{canWorkAddr.length>0}}'>已选：</text>
+          <text class='canWorkAddr' data-index='{{index}}' wx:for='{{gzData}}' wx:key="*this"  catchtap='gzData_close'>{{item}}<text class='canWorkAddr_close' wx:if='{{!infoDisabled}}'>x</text></text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <picker mode="multiSelector" disabled='{{infoDisabled}}' bindchange="bindGzPickerChange" bindcolumnchange="bindGzPickerColumnChange" value="{{gzIndex}}" range="{{gzArray}}" range-key="{{'name'}}">
+                <view class="picker">
+                  {{gzArray[0][gzIndex[0]].name}}-{{gzArray[1][gzIndex[1]].name}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view> -->
+
+        <view class="weui-cells__title">邀请码</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" disabled='{{infoDisabled}}' placeholder="请输入邀请码" value='{{yaoqingCode}}' bindinput='yaoqingCode' />
+            </view>
+          </view>
+        </view>
+
+        <view class="weui-cells__title">资质证书</view>
+        <wux-upload showRemoveIcon="{{imgInfoDisabled}}" disabled='{{infoDisabled}}' list-type="picture-card" file-list="{{ fileList1}}" url="{{fileUrl}}" formData='{{formData}}' bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete1" bind:preview="onPreview" bind:remove='onRemove1'>
+          <text style='font-size:30rpx;color:#666;'>上传</text>
+        </wux-upload>
+
+        <view class="weui-cells__title">自我介绍：
+          <text class='color_red'>*</text>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <textarea class="weui-textarea" disabled='{{infoDisabled}}' value='{{introduceMyself}}' maxlength='200' bindinput='introduceMyself' placeholder="请自我介绍. . ." adjust-position='{{true}}' />
+              <view class="weui-textarea-counter">{{zishu1}}/200</view>
+            </view>
+          </view>
+        </view>
+        <!-- 企业基本资料的提交 -->
+        <button class="weui-btn info_tj" type="warn" disabled='{{infoDisabled}}' bindtap='bgxInfoSubmit'>提交</button>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="li" data-index="1" bindtap='changeToggle'>
+  <view class="left">个人业绩</view>
+  <view class="right">
+    <image src="{{selectedFlag[1]?'/pages/images/jiantou_shang.png':'/pages/images/jiantou_xia.png'}}"> </image>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[1]}}">
+  <!-- 补充个人业绩 -->
+  <button class="add_yeji" catchtap='add_yeji'>点击添加业绩 , 增加接活成功率</button>
+  <view class='add_yeji_content' hidden='{{yeji_content}}'>
+    <view class="weui-cells__title">项目名称
+      <text class='color_red'>*</text>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入项目名称" value='{{yejiName}}' bindinput='yejiName' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">开始时间
+      <text class='color_red'>*</text>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{yeji_startTime}}" start="2000-09-01" end="2099-09-01" bindchange="yeji_startTime">
+            <view class="picker">
+              开始时间：{{yeji_startTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">结束时间
+      <text class='color_red'>*</text>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{yeji_endTime}}" start="2000-09-01" end="2099-09-01" bindchange="yeji_endTime">
+            <view class="picker">
+              结束时间：{{yeji_endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">施工地址
+      <text class='color_red'>*</text>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入施工地址" value='{{yeji_addr}}' bindinput='yeji_addr' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">项目业主方</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入项目业主名称" value='{{yeji_yezhuName}}' bindinput='yeji_yezhuName' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">项目承包方</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入项目承包方名称" value='{{yeji_chengbaoName}}' bindinput='yeji_chengbaoName' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">工作图片</view>
+    <wux-upload count="9" list-type="picture-card" file-list="{{fileList2}}" url="{{fileUrl}}" formData='{{formData}}' bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete2" bind:preview="onPreview" bind:remove='onRemove2'>
+      <text style='font-size:30rpx;color:#666;'>上传</text>
+    </wux-upload>
+
+    <view class="weui-cells__title">施工内容
+      <text class='color_red'>*</text>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" maxlength='200' placeholder="请输入施工内容 . . ." value='{{yeji_Info}}' bindinput='yeji_Info'></textarea>
+          <text class='yeji_Info_zishu'>{{yeji_Info_zishu}}/200</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 业绩提交 -->
+    <button class="weui-btn info_tj" type="warn" bindtap='submit_yeji'>添加业绩</button>
+
+
+  </view>
+  <view class='yeji'>
+    <view class='yeji_title'>我的业绩：共 {{yeji_content_show.length}} 条</view>
+    <view class='yeji_content'>
+      <view class='yeji_content0' wx:for='{{yeji_content_show}}' wx:key="*this" wx:for-item='item1'>
+        <!-- <image class='edit' data-id='{{item1.id}}' catchtap='editYeji' src='/pages/images/edit.png'></image> -->
+        <image class='delete' data-id='{{item1.id}}' catchtap='deleteYeji' src='/pages/images/delete.png'></image>
+        <view class='yeji_content1'>业绩{{index+1}}:{{item1.name}}</view>
+        <view class='yeji_content2'>
+          <text>{{item1.start_time}}</text>到
+          <text>{{item1.end_time}}</text>
+        </view>
+        <view class='yeji_content3'>
+          <text class='yeji_content3_l'>地址：</text>{{item1.address}}</view>
+        <view class='yeji_content3'>
+          <text class='yeji_content3_l'>业主：</text>{{item1.p_owner_com?item1.p_owner_com:'无'}}</view>
+        <view class='yeji_content3'>
+          <text class='yeji_content3_l'>承包方：</text>{{item1.p_contract_com?item1.p_contract_com:'无'}}</view>
+        <view class='yeji_content4'>工作图片：</view>
+        <view class='yeji_content5 weui-grids'>
+          <block wx:for="{{item1.pFiles}}" wx:for-item='item2'>
+            <view class="weui-grid" hover-class="weui-grid_active" wx:if='{{item1.pFiles.length>0}}'>
+              <image class="weui-grid__icon" src="{{item2.pFile}}" />
+            </view>
+          </block>
+        </view>
+        <view wx:if='{{item1.pFiles.length == 0}}'>
+          <view class='nonetupian'>这家伙很懒，暂无图片上传. . .</view>
+        </view>
+        <view class='yeji_content6'>施工内容：</view>
+        <view class='yeji_content7'>
+          {{item1.content}}
+        </view>
+
+      </view>
+    </view>
+
+    <!-- <view class='yeji_content' hidden='{{yeji_content_show.length == 0}}'>暂未上传业绩 . . .</view> -->
+  </view>
+</view>
+
+<view class="li" data-index="2" bindtap='changeToggle'>
+  <view class="left">审核信息</view>
+  <view class="right red">
+    <image src="{{selectedFlag[2]?'/pages/images/jiantou_shang.png':'/pages/images/jiantou_xia.png'}}"> </image>
+  </view>
+</view>
+<wux-wing-blank>
+  <view class='content' hidden="{{!selectedFlag[2]}}">
+    <view class='shenhe' wx:for='{{shenheInfo}}' wx:key="*this">
+      <view class='shenhe_title' data-id='item.id'>审核通知({{item.auditorType}})</view>
+      <view class='shenhe_time'>{{item.auditing_time?item.auditing_time:item.submit_time}}</view>
+      <view class='shenhe_l'>审核状态:</view>
+      <view class='shenhe_r'>{{item.status}}</view>
+      <view class='shenhe_l'>提交时间：</view>
+      <view class='shenhe_r'>{{item.submit_time}}</view>
+      <view class='shenhe_l'>平台反馈：</view>
+      <view class='shenhe_r'>{{item.auditing_content}}</view>
+      <view class='shenhe_oprator'>操作：</view>
+      <view class='oprator_btn'>
+        <button class="btn_" data-type='{{item.auditorType}}' disabled='{{item.oprator_status}}' bindtap="shenhe_edit">修改信息</button>
+        </view>
+    </view>
+  </view>
+</wux-wing-blank>

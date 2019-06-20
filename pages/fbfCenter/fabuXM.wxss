@@ -1,0 +1,89 @@
+/* pages/fbfCenter/fabuXM.wxss */
+@import "../teml/citys_teml.wxss";
+
+.picker {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
+
+.weui-textarea {
+  padding-top: 30rpx;
+}
+
+.weui-uploader__bd {
+  background-color: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+
+.zishu {
+  position: absolute;
+  top: 16rpx;
+  right: 20rpx;
+  color: #666;
+}
+
+.gongzhong {
+  padding: 5rpx 0 5rpx 10rpx;
+  border: 2rpx solid black;
+  margin-right: 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  position: relative;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.gongzhong_close {
+  margin-left: 10rpx;
+  border-left: 2rpx solid black;
+  padding: 5rpx 15rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  background-color: #666;
+  color: #fff;
+}
+
+.weui-uploader__file {
+  position: relative;
+}
+
+.btn_delete {
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  background-color: #ccc;
+  color: #fff;
+  position: absolute;
+  top: -20rpx;
+  right: 10rpx;
+}
+
+.yusuan {
+  height: 88rpx;
+}
+
+.yusuan::after {
+  content: '万元';
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  color: #666;
+}
+
+.fabu {
+  margin: 30rpx 20rpx;
+}
+
+.color_red {
+  color: red;
+  font-size: 30rpx;
+  position: relative;
+  left: 10rpx;
+  top: 5rpx;
+}

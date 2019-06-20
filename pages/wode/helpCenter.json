@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "帮助中心",
+  "usingComponents": {
+    "wux-accordion-group": "../component/accordion-group/index",
+    "wux-accordion": "../component/accordion/index"
+  }
+}

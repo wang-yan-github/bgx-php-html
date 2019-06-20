@@ -1,0 +1,48 @@
+<!--pages/teml/citys_teml.wxml-->
+<template name="citys">
+  <view class="input">
+    <view class='quyu' data-code='{{county.code}}' disabled='{{isDisabled}}' bindtap="open">
+      {{province.name}}-{{city.name}}-{{county.name}}</view>
+  </view>
+
+  <view wx:if="{{condition}}" class="citypicker">
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+      <view class="cityheader">
+        <view bindtap="open" class="city-cancel">取消</view>
+        <view bindtap="open" class="city-true">确定</view>
+      </view>
+      <picker-view-column>
+        <view wx:for="{{provinces}}" wx:key="item" data-code='item.code' style="line-height: 50px;padding-left:10px;">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{citys}}" wx:key="item" data-code='item.code' style="line-height: 50px;padding-left:10px;">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{countys}}" ddata-code='item.code' wx:key="item" style="line-height: 50px;padding-left:10px;">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</template>
+
+<template name="citys2">
+  <view class="input">
+    <view class='quyu' data-code='{{city2.code}}' disabled='{{isDisabled2}}' bindtap="open2">{{province2.name}}-{{city2.name}} </view>
+  </view>
+  <view wx:if="{{condition2}}" class="citypicker">
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value2}}" bindchange="bindChange2" class="citybody">
+      <view class="cityheader">
+        <view bindtap="open2" class="city-cancel">取消</view>
+        <view bindtap="open3" class="city-true">确定</view>
+      </view>
+      <picker-view-column>
+        <view wx:for="{{provinces2}}" wx:key="item" data-code='item.code' style="line-height: 50px;padding-left:10px;">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{citys2}}" wx:key="item" data-code='item.code' style="line-height: 50px;padding-left:10px;">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</template>
+
+<template is="citys" data="{{province,city,county,condition,provinces,citys,countys,value,isDisabled}}"></template>
+<template is="citys2" data="{{province2,city2,condition2,provinces2,citys2,value2,isDisabled2}}"></template>
